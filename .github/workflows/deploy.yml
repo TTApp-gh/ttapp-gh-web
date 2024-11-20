@@ -12,10 +12,6 @@ jobs:
     steps:
     - name: test key
       run: echo "${{ secrets.SSH_PRIVATE_KEY }}"
-    
-    - name: Decode SSH keys
-      run: |
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > ~/.ssh/id_rsa
 
     - name: Checkout Code
       uses: actions/checkout@v3
