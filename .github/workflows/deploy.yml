@@ -8,12 +8,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-    - name: Print Secret
+    - name: test key
       run: echo "${{ secrets.SSH_PRIVATE_KEY }}" | wc -l
       
-    steps:
     - name: Checkout Code
       uses: actions/checkout@v3
       
