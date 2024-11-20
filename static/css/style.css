@@ -1,4 +1,9 @@
 /* Custom styles for Uber-like appearance */
+.img_logo {
+	border-radius:100%;
+	width:40px;
+}
+
 .navbar-brand, .nav-link, .footer-text {
 	color: #fff;
 }
@@ -358,6 +363,227 @@
   .step {
     width: 100%;
   }
+}
+
+
+/* Driver Extras Section */
+.driver-extras {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.driver-extras-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.driver-extras h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.driver-extras .subheading {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.extras {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.extra {
+  flex: 1 1 30%;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.icon-container img {
+  width: 50px;
+  height: 50px;
+}
+
+.extra h3 {
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.extra p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.extra a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.extra a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .extras {
+    flex-direction: column;
+  }
+
+  .extra {
+    width: 100%;
+  }
+}
+
+/* Driver App Section */
+.driver-app {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.driver-app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .driver-app-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-content {
+    margin-top: 20px;
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.faq {
+  border-top: 1px solid #ddd;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  background-color: #f1f1f1;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.arrow {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Expand/Collapse Logic */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(180deg);
 }
 
 

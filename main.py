@@ -6,14 +6,13 @@
 
 from flask import Flask, render_template
 
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__)
 
-app_name = 'Doziem'
 
 @app.route('/')
 def home():
     app_name = "TTApp"
-    title = 'Welcome to Our Website!'
+    title = 'Welcome to TTApp!'
     return render_template('index.html', title=title, app_name=app_name)
 
 @app.route('/about/')
