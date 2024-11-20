@@ -25,7 +25,7 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.AWS_USER }}@${{ secrets.AWS_HOST }} << 'EOF'
         cd ~/ttapp-gh-web
-        git pull
+        git fetch
         source ~/venv/bin/activate
         pip install -r requirements.txt
         sudo systemctl restart ttapp.service
