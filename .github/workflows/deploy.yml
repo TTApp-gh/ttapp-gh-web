@@ -1,0 +1,29 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.AWS_SSH_KEY }}
+
+    - name: Deploy to EC2
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.AWS_USER }}@${{ secrets.AWS_HOST }} << 'EOF'
+        cd ~/ttapp-gh-web
+        git pull
+        source ~/venv/bin/activate
+        pip install -r requirements.txt
+        sudo systemctl restart ttapp.service
+        EOF
