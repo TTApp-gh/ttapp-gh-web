@@ -11,7 +11,7 @@ jobs:
     
     steps:
     - name: test key
-      run: echo "${{ secrets.SSH_PRIVATE_KEY }}" | wc -l
+      run: echo "${{ secrets.SSH_PRIVATE_KEY }}"
       
     - name: Checkout Code
       uses: actions/checkout@v3
