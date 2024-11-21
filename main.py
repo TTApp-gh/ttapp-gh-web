@@ -13,7 +13,7 @@ app = Flask(__name__)
 def home():
     app_name = "TTApp"
     title = 'Welcome to TTApp!'
-    return render_template('index.html', title=title, app_name=app_name)
+    return render_template('index.py', title=title, app_name=app_name)
 
 @app.route('/about/')
 def about():

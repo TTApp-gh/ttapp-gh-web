@@ -14,14 +14,14 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='images/logo.jpeg') }}" class="img_logo" /> {{ app_name }}</a>
+        <a id="home" class="navbar-brand navigate" href="/"><img src="{{ url_for('static', filename='images/logo.jpeg') }}" class="img_logo" /> {{ app_name }}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
 				<li id="home" class="nav-item navigate">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#index">Home</a>
                 </li>
 				<li id="drive" class="nav-item navigate">
                     <a class="nav-link" href="#driver">Drive & Deliver</a>
@@ -51,12 +51,14 @@
         </div>
     </div>
 </nav>
+<br />
+<br />
 
 <!--------- The Index / Home Page is Identified and starts here id=drive -------------->
 <!--------- The Index / Home Page is Identified and starts here id=drive -------------->
 
 <!-- Hero Section -->
-<section id="home" class="section home hero-section">
+<section id="index" class="section home hero-section" title="home">
     <div class="container">
         <h1>Your ride, on demand</h1>
         <p>Get a reliable ride in minutes with the {{ app_name }}.</p>
@@ -145,7 +147,7 @@
                 <div class="card shadow-sm p-4">
                     <h4 class="card-title">Ride</h4>
                     <p class="card-text">Go anywhere with Uber. Request a ride, hop in, and go.</p>
-                    <img src="{{ url_for('static', filename='images/car.png') }}" alt="Ride" class="img-fluid mb-3">
+                    <img src="{{ url_for('static', filename='images/car.PNG') }}" alt="Ride" class="img-fluid mb-3">
                     <a href="#" class="btn btn-light border">Details</a>
                 </div>
             </div>
@@ -154,7 +156,7 @@
                 <div class="card shadow-sm p-4">
                     <h4 class="card-title">Package</h4>
                     <p class="card-text">{{ app_name }} Connect makes same-day delivery easier than ever.</p>
-                    <img src="{{ url_for('static', filename='images/package.png') }}" alt="Package" class="img-fluid mb-3">
+                    <img src="{{ url_for('static', filename='images/package.PNG') }}" alt="Package" class="img-fluid mb-3">
                     <a href="#" class="btn btn-light border">Details</a>
                 </div>
             </div>
@@ -163,7 +165,7 @@
                 <div class="card shadow-sm p-4">
                     <h4 class="card-title">Reserve</h4>
                     <p class="card-text">Reserve your ride in advance so you can relax on the day of your trip.</p>
-                    <img src="{{ url_for('static', filename='images/reserve.png') }}" alt="Reserve" class="img-fluid mb-3">
+                    <img src="{{ url_for('static', filename='images/reserve.PNG') }}" alt="Reserve" class="img-fluid mb-3">
                     <a href="#" class="btn btn-light border">Details</a>
                 </div>
             </div>
@@ -178,7 +180,7 @@
         <div class="row align-items-center">
             <!-- Image Column -->
             <div class="col-md-6">
-                <img src="{{ url_for('static', filename='images/drive.png') }}" alt="Driver" class="img-fluid rounded">
+                <img src="{{ url_for('static', filename='images/drive.PNG') }}" alt="Driver" class="img-fluid rounded">
             </div>
             <!-- Text Column -->
             <div class="col-md-6">
@@ -205,7 +207,7 @@
             </div>
             <!-- Image Column -->
             <div class="col-md-6">
-                <img src="{{ url_for('static', filename='images/business2.png') }}" alt="Business Scene" class="img-fluid rounded">
+                <img src="{{ url_for('static', filename='images/business2.PNG') }}" alt="Business Scene" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -373,7 +375,7 @@
 
 <!--------- The Drive Page is Identified and starts here id=drive -------------->
 <!--------- The Drive Page is Identified and starts here id=drive -------------->
-<section id="driver" class="section drive drive-section">
+<section id="driver" class="section drive drive-section" title="drive">
   <div class="drive-container">
     <div class="drive-text">
       <h1>Opportunity is everywhere</h1>
@@ -386,7 +388,7 @@
       </div>
     </div>
     <div class="drive-image">
-      <img src="{{ url_for('static', filename='images/drive1_img.png') }}" alt="Driver Illustration">
+      <img src="{{ url_for('static', filename='images/drive1_img.PNG') }}" alt="Driver Illustration">
     </div>
   </div>
 </section>
@@ -397,7 +399,7 @@
       <h2>Make money when you want</h2>
     </div>
     <div class="earn-image">
-      <img src="{{ url_for('static', filename='images/driver-passenger.png') }}" alt="Driver and Passenger Illustration">
+      <img src="{{ url_for('static', filename='images/driver-passenger.PNG') }}" alt="Driver and Passenger Illustration">
     </div>
     <div class="earn-features">
       <div class="feature-item">
@@ -465,7 +467,7 @@
     <div class="extras">
       <div class="extra">
         <div class="icon-container">
-          <img src="{{ url_for('static', filename='images/get_support.png') }}" alt="Get support icon" />
+          <img src="{{ url_for('static', filename='images/get_support.PNG') }}" alt="Get support icon" />
         </div>
         <h3>Get support</h3>
         <p>
@@ -475,7 +477,7 @@
       </div>
       <div class="extra">
         <div class="icon-container">
-          <img src="{{ url_for('static', filename='images/contact_us.png') }}" alt="Contact us icon" />
+          <img src="{{ url_for('static', filename='images/contact_us.PNG') }}" alt="Contact us icon" />
         </div>
         <h3>Contact us</h3>
         <p>
@@ -485,7 +487,7 @@
       </div>
       <div class="extra">
         <div class="icon-container">
-          <img src="{{ url_for('static', filename='images/drive_safe.png') }}" alt="Drive safely icon" />
+          <img src="{{ url_for('static', filename='images/drive_safe.PNG') }}" alt="Drive safely icon" />
         </div>
         <h3>Drive safely</h3>
         <p>
@@ -507,7 +509,7 @@
       <a href="#" class="learn-more">Learn more</a>
     </div>
     <div class="image-content">
-      <img src="{{ url_for('static', filename='images/driver_app_image.png') }}" alt="Driver app interface on mobile" />
+      <img src="{{ url_for('static', filename='images/driver_app_image.PNG') }}" alt="Driver app interface on mobile" />
     </div>
   </div>
 </section>

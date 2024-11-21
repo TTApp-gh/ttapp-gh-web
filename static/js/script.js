@@ -7,12 +7,25 @@ $(document).ready(function(){
 	});
 	
 	$(".navigate").on("click", function(){
-		let id = "."+$(this).attr('id');
+		let classs = "."+$(this).attr('id');
 		$(".section").hide();
-		$(id).show();
+		$(classs).show();
 		$(".navbar-collapse").slideUp();
 		
 	});
+	
+	// Get the current page URL
+	const url = window.location.href;
+
+	// Extract the hash part
+	const section = url.split("#")[1]; // Splitting manually
+	if(section){
+		let nav_link = $('#'+section).attr('title');
+		let classs = "."+ nav_link;
+		$(".section").hide();
+		$(classs).show();
+		//alert(classs);
+	}
 });
 
 document.querySelectorAll('.faq-question').forEach((button) => {
