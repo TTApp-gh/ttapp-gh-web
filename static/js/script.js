@@ -49,7 +49,7 @@ document.querySelectorAll('.faq-question').forEach((button) => {
 // Function to initialize the map
 function initializeMap() {
 	// Create the map
-	const map = L.map('map').setView([0, 0], 13); // Default view
+	const map = L.map('maps').setView([0, 0], 13); // Default view
 
 	// Add OpenStreetMap tiles
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -83,7 +83,8 @@ function initializeMap() {
 
 // Initialize the map when the page loads
 window.onload = initializeMap;
-/*
+
+
 let map;
 let geocoder;
 
@@ -115,6 +116,7 @@ function initMap() {
 			}else{
 				setInterval('load("cord", "../lib/profile.php", '+cord+')',16000);
 			}
+			*/
 			
 			//alert(document.getElementById("cord").value);
 
@@ -131,4 +133,3 @@ function initMap() {
 function handleLocationError(browserHasGeolocation, pos) {
 	alert(browserHasGeolocation ? "Error: The Geolocation service failed." : "Error: Your browser doesn't support geolocation.");
 }
-*/

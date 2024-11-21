@@ -30,10 +30,10 @@
                     <a class="nav-link" href="#driver">Drive & Deliver</a>
                 </li>
                 <li id="ride" class="nav-item navigate">
-                    <a class="nav-link" href="#ride">Ride</a>
+                    <a class="nav-link" href="#riding">Ride</a>
                 </li>
 				<li id="eat" class="nav-item navigate">
-                    <a class="nav-link" href="#eat">{{ app_name }} Eats</a>
+                    <a class="nav-link" href="#eating">{{ app_name }} Eats</a>
                 </li>
 				<li id="business" class="nav-item navigate">
                     <a class="nav-link" href="#bussiness">{{ app_name }} for Business</a>
@@ -70,7 +70,7 @@
 </section>
 
 <!-- Ride/Package Section -->
-<section class="section home ride-package-section">
+<section id="riding" class="section home ride ride-package-section" title="ride">
     <div class="container">
         <div class="row align-items-center">
             <!-- Left Side: Form -->
@@ -140,7 +140,7 @@
 
 
 <!-- Suggestions Section -->
-<section class="section home suggestions-section py-5">
+<section class="section home ride suggestions-section py-5">
     <div class="container">
         <h2 class="mb-4">Suggestions</h2>
         <div class="row">
@@ -593,8 +593,98 @@
     </div>
   </div>
 </section>
+
+<section class="section drive sign-up-section">
+  <div class="sign-up-container">
+    <div class="sign-up-header">
+      <h2>Sign up to drive</h2>
+      <a href="#" class="cta-arrow">
+        <span>→</span>
+      </a>
+    </div>
+    <hr />
+    <div class="sign-up-content">
+      <p>
+        This is a promotional offer and is not a promise or guarantee of future earnings. This offer is available only to new drivers and delivery people on the {{ app_name }} who (i) have never previously signed up to drive or deliver with {{ app_name }}; (ii) receive this offer directly from Uber and see it in the guarantee tracker of the {{ app_name }} Driver app; (iii) are cleared to drive or deliver with {{ app_name }}; and (iv) complete the number of trips or deliveries displayed in the guarantee tracker in the city where they signed up to drive within the specified timeframe. Offer terms such as the number of trips or deliveries and reward amount may vary by location. The guarantee offer that you see in the app replaces any guarantee amounts {{ app_name }} previously offered you.
+      </p>
+      <p>
+        Earnings from your trips (after service fees and certain charges are deducted, such as city or local government charges) are included toward your guaranteed amount; any tips and promotions you make are on top of that amount. Earnings from your deliveries (after service fees and certain charges are deducted, such as city or local government charges) and Eats Boost promotions are included toward your offer amount; any tips and additional promotions you make are on top of that amount.
+      </p>
+      <p>
+        Any payment due will be automatically added to your account after you complete the required trips. Each completed trip or delivery counts as one trip or delivery toward your minimum requirement. Canceled trips or deliveries do not count. This offer is only valid for those who received it from {{ app_name }} (via an email, an ad, a web page, or a unique referral link) and meet the eligibility requirements. {{ app_name }} reserves the right to withhold or deduct payments that it determines or believes were fraudulent, illegal, in error, or in violation of the driver terms or these terms. Limited time only. Offer and terms are subject to change.
+      </p>
+    </div>
+  </div>
+</section>
+
 <!--------------------------- The Drive Page Ends Here ------------------------>
 <!--------------------------- The Drive Page Ends Here ------------------------>
+
+
+
+
+
+
+
+<!--------- The TTApp Eat Page is Identified and starts here id=drive -------------->
+<!--------- The TTApp Eat Page is Identified and starts here id=drive -------------->
+
+<section id="eating" class="section eat delivery-section" title="eat">
+  <div class="delivery-container">
+    <header class="delivery-header">
+      <h1>Order delivery near you</h1>
+    </header>
+    <form class="delivery-form">
+      <div class="input-group">
+        <input
+          type="text"
+          placeholder="Enter delivery address"
+          class="delivery-input"
+          aria-label="Enter delivery address"
+        />
+        <select class="delivery-time">
+          <option value="now">Deliver now</option>
+          <option value="later">Deliver later</option>
+        </select>
+        <button type="button" class="search-btn">Search here</button>
+      </div>
+      <p class="signin-link">
+        Or <a href="#">Sign In</a>
+      </p>
+    </form>
+    <div class="background-overlay"></div>
+  </div>
+</section>
+
+<section class="ttapp-services">
+  <div class="services-container">
+    <div class="service-card">
+      <img src="{{ url_for('static', filename='images/eat_image1.PNG') }}" alt="Feed your employees" class="service-image" />
+      <h2>Feed your employees</h2>
+      <a href="#" class="service-link">Create a business account</a>
+    </div>
+    <div class="service-card">
+      <img src="{{ url_for('static', filename='images/eat_image2.PNG') }}" alt="Your restaurant, delivered" class="service-image" />
+      <h2>Your restaurant, delivered</h2>
+      <a href="#" class="service-link">Add your restaurant</a>
+    </div>
+    <div class="service-card">
+      <img src="{{ url_for('static', filename='images/eat_image3.PNG') }}" alt="Deliver with TTApp" class="service-image" />
+      <h2>Deliver with TTApp</h2>
+      <a href="#" class="service-link">Sign up to deliver</a>
+    </div>
+  </div>
+
+  <div class="cities-near-me">
+    <h2>Cities near me</h2>
+    <a href="#" class="view-all-link">View all cities</a>
+    <div id="maps" style="height: 500px; width: 100%;"></div>
+  </div>
+</section>
+
+<!--------------------------- The TTApp Eat Page Ends Here ------------------------>
+<!--------------------------- The TTApp Eat Page Ends Here ------------------------>
+
 
 
 
