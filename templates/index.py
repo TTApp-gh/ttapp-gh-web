@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
+<body onload="initMap();">
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
@@ -656,7 +656,7 @@
   </div>
 </section>
 
-<section class="ttapp-services">
+<section class="section eat ttapp-services">
   <div class="services-container">
     <div class="service-card">
       <img src="{{ url_for('static', filename='images/eat_image1.PNG') }}" alt="Feed your employees" class="service-image" />
