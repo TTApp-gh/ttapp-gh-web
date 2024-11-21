@@ -24,9 +24,12 @@ jobs:
     - name: Deploy to EC2
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.AWS_USER }}@${{ secrets.AWS_HOST }} << 'EOF'
-        cd ~/ttapp-gh-web
-        git pull
+        sudo systemctl stop ttapp.service
+        sudo rm -rf ~/ttapp-gh-web
+        git clone https://github.com/TTApp-gh/ttapp-gh-web.git
+        cd ttapp-gh-web
         source ~/venv/bin/activate
         pip install -r requirements.txt
-        sudo systemctl restart ttapp.service
+        sudo systemctl start ttapp.service
+        sudo systemctl restart nginx.service
         EOF
