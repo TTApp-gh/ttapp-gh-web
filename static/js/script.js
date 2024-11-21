@@ -46,6 +46,44 @@ document.querySelectorAll('.faq-question').forEach((button) => {
 
 
 ////////////////Here we placed the Geolocation code/////////////////////////////////////
+// Function to initialize the map
+function initializeMap() {
+	// Create the map
+	const map = L.map('map').setView([0, 0], 13); // Default view
+
+	// Add OpenStreetMap tiles
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '© OpenStreetMap contributors'
+	}).addTo(map);
+
+	// Geolocation to get the user's current position
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(
+			(position) => {
+				const { latitude, longitude } = position.coords;
+				// Set the map view to user's location
+				map.setView([latitude, longitude], 13);
+
+				// Add a marker for the user's location
+				L.marker([latitude, longitude])
+					.addTo(map)
+					.bindPopup('You are here!')
+					.openPopup();
+			},
+			(error) => {
+				console.error("Geolocation error:", error.message);
+				alert("Unable to retrieve your location. Please check your settings.");
+			}
+		);
+	} else {
+		alert("Geolocation is not supported by your browser.");
+	}
+}
+
+// Initialize the map when the page loads
+window.onload = initializeMap;
+/*
 let map;
 let geocoder;
 
@@ -77,7 +115,7 @@ function initMap() {
 			}else{
 				setInterval('load("cord", "../lib/profile.php", '+cord+')',16000);
 			}
-			*/
+			
 			//alert(document.getElementById("cord").value);
 
 		}, function() {
@@ -93,3 +131,4 @@ function initMap() {
 function handleLocationError(browserHasGeolocation, pos) {
 	alert(browserHasGeolocation ? "Error: The Geolocation service failed." : "Error: Your browser doesn't support geolocation.");
 }
+*/

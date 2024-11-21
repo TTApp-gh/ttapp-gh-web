@@ -7,6 +7,9 @@
 	<link rel="icon" href="{{ url_for('static', filename='images/logo.jpeg') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -127,15 +130,14 @@
 
             <!-- Right Side: Map -->
             <div class="col-md-6">
-                <div class="map-placeholder" style="ckground-color: #e0e0e0; width: 100%; height: 400px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <div id="map" class="map-placeholder" style="ckground-color: #e0e0e0; width: 100%; height: 400px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                     <p>Map Placeholder</p>
-					<section id="map"></section>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section id="map"></section>
+
 
 <!-- Suggestions Section -->
 <section class="section home suggestions-section py-5">
