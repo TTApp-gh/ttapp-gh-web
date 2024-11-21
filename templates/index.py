@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body onload="initMap();">
+<body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">

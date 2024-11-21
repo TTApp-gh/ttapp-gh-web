@@ -49,7 +49,7 @@ document.querySelectorAll('.faq-question').forEach((button) => {
 // Function to initialize the map
 function initializeMap() {
 	// Create the map
-	const map = L.map('maps').setView([0, 0], 13); // Default view
+	const map = L.map('map').setView([0, 0], 13); // Default view
 
 	// Add OpenStreetMap tiles
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -97,7 +97,7 @@ function initMap() {
 				lng: position.coords.longitude
 			};
 
-			map = new google.maps.Map(document.getElementById('map'), {
+			map = new google.maps.Map(document.getElementById('maps'), {
 				center: currentPosition,
 				zoom: 13
 			});
