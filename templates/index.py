@@ -44,11 +44,11 @@
                 <li id="help" class="nav-item navigate">
                     <a class="nav-link" href="#help">Help</a>
                 </li>
-                <li id="login" class="nav-item navigate">
+                <li id="signin" class="nav-item navigate">
                     <a class="nav-link" href="#login">Log in</a>
                 </li>
                 <li id="signup" class="nav-item navigate">
-                    <a class="nav-link btn btn-dark text-light" href="#signup">Sign up</a>
+                    <a class="nav-link btn btn-dark text-light" href="#signingup">Sign up</a>
                 </li>
             </ul>
         </div>
@@ -374,6 +374,110 @@
 
 
 
+<!--------- The signup Page is Identified and starts here id=drive -------------->
+<!--------- The signup Page is Identified and starts here id=drive -------------->
+
+<section id="signingup" class="section signup container my-5" title="signup">
+  <div class="row g-4 text-center">
+    <!-- Sign up to drive & deliver -->
+    <div class="col-md-6">
+      <div class="p-4 border-bottom">
+        <h4 class="fw-bold">Sign up to drive & deliver</h4>
+        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+      </div>
+    </div>
+    <!-- Sign up to ride -->
+    <div class="col-md-6">
+      <div class="p-4 border-bottom">
+        <h4 class="fw-bold">Sign up to ride</h4>
+        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+      </div>
+    </div>
+    <!-- Sign up to order delivery -->
+    <div class="col-md-6">
+      <div class="p-4 border-bottom">
+        <h4 class="fw-bold">Sign up to order delivery with TTApp</h4>
+        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+      </div>
+    </div>
+    <!-- Sign up for business -->
+    <div class="col-md-6">
+      <div class="p-4 border-bottom">
+        <h4 class="fw-bold">Sign up to your TTApp Business account</h4>
+        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- The signup Page Ends Here ------------------------>
+<!--------------------------- The signup Page Ends Here ------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------- The signin Page is Identified and starts here id=drive -------------->
+<!--------- The signin Page is Identified and starts here id=drive -------------->
+
+<section id="login" class="section signin container my-5" title="signin">
+  <div class="row g-4 text-center">
+    <!-- Sign in to drive & deliver -->
+    <div class="col-md-6">
+      <div class="p-4 border-bottom">
+        <h4 class="fw-bold">Sign in to drive & deliver</h4>
+        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+      </div>
+    </div>
+    <!-- Sign in to ride -->
+    <div class="col-md-6">
+      <div class="p-4 border-bottom">
+        <h4 class="fw-bold">Sign in to ride</h4>
+        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+      </div>
+    </div>
+    <!-- Sign in to order delivery -->
+    <div class="col-md-6">
+      <div class="p-4 border-bottom">
+        <h4 class="fw-bold">Sign in to order delivery with TTApp</h4>
+        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+      </div>
+    </div>
+    <!-- Sign in for business -->
+    <div class="col-md-6">
+      <div class="p-4 border-bottom">
+        <h4 class="fw-bold">Sign in to your TTApp Business account</h4>
+        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- The signin Page Ends Here ------------------------>
+<!--------------------------- The signin Page Ends Here ------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--------- The Drive Page is Identified and starts here id=drive -------------->
 <!--------- The Drive Page is Identified and starts here id=drive -------------->
@@ -679,6 +783,83 @@
     <h2>Cities near me</h2>
     <a href="#" class="view-all-link">View all cities</a>
     <div id="maps" style="height: 500px; width: 100%;"></div>
+  </div>
+</section>
+
+
+<section class="section eat ttapp-locations">
+  <div class="cities-section">
+    <h2>Cities with TTApp</h2>
+    <div class="cities-list">
+      <ul>
+        <li>Akron</li>
+        <li>Albuquerque</li>
+        <li>Bridgeport</li>
+        <li>Concord</li>
+        <li>Dayton</li>
+        <li>El Paso</li>
+      </ul>
+      <ul>
+        <li>Hartford</li>
+        <li>Houston</li>
+        <li>Indianapolis</li>
+        <li>McAllen</li>
+        <li>Mesa</li>
+        <li>Milwaukee</li>
+      </ul>
+      <ul>
+        <li>Nashville</li>
+        <li>New Orleans</li>
+        <li>Oklahoma City</li>
+        <li>Omaha</li>
+        <li>Orlando</li>
+        <li>Palm Bay</li>
+      </ul>
+      <ul>
+        <li>Providence</li>
+        <li>Queens</li>
+        <li>San Antonio</li>
+        <li>Stony Brook</li>
+        <li>Tucson</li>
+        <li>West Hollywood</li>
+      </ul>
+    </div>
+    <a href="#" class="view-all-link">View all cities</a>
+  </div>
+
+  <div class="countries-section">
+    <h2>Countries with TTApp</h2>
+    <div class="countries-list">
+      <ul>
+        <li>Australia</li>
+        <li>Belgium</li>
+        <li>Canada</li>
+        <li>Chile</li>
+        <li>Costa Rica</li>
+      </ul>
+      <ul>
+        <li>France</li>
+        <li>Germany</li>
+        <li>Guatemala</li>
+        <li>Ireland</li>
+        <li>Italy</li>
+      </ul>
+      <ul>
+        <li>Mexico</li>
+        <li>Netherlands</li>
+        <li>New Zealand</li>
+        <li>Panama</li>
+        <li>Poland</li>
+      </ul>
+      <ul>
+        <li>Sri Lanka</li>
+        <li>Sweden</li>
+        <li>Switzerland</li>
+        <li>Taiwan (ROC)</li>
+        <li>United Kingdom</li>
+      </ul>
+    </div>
+    <a href="#" class="view-all-link">View all countries</a>
   </div>
 </section>
 

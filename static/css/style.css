@@ -822,6 +822,92 @@ hr {
   color: #005bb5;
 }
 
+/* Locations Section */
+.ttapp-locations {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.ttapp-locations h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cities-section, .countries-section {
+  margin-bottom: 40px;
+}
+
+.cities-list, .countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cities-list ul, .countries-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cities-list ul li, .countries-list ul li {
+  margin: 5px 0;
+  color: #333;
+}
+
+.view-all-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0073e6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+  color: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cities-list ul, .countries-list ul {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 /* TTApp Eat Section ends Here */
 
 
+/* Signup section starts Here */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Signup section ends Here */
+
+
+
+/* Signin section starts Here */
+/* Optional: Add hover effects for links */
+a.text-decoration-none:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Optional: Add space between rows on smaller screens */
+.row.g-4 > * {
+  margin-bottom: 20px;
+}
+/* Signin section ends Here */
