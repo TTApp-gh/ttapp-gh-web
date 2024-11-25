@@ -41,7 +41,10 @@
 				<li id="account" class="nav-item navigate">
                     <a class="nav-link" href="#account">Manage Account</a>
                 </li>
-                <li id="help" class="nav-item navigate">
+                <li id="about" class="nav-item navigate">
+                    <a class="nav-link" href="#about_us">About Us</a>
+                </li>
+                <li id="help0" class="nav-item navigate">
                     <a class="nav-link" href="#help">Help</a>
                 </li>
                 <li id="signin" class="nav-item navigate">
@@ -382,33 +385,97 @@
     <!-- Sign up to drive & deliver -->
     <div class="col-md-6">
       <div class="p-4 border-bottom">
-        <h4 class="fw-bold">Sign up to drive & deliver</h4>
-        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+        <h4 class="fw-bold"><a href="#signingup1" id="signup1" class="text-black fs-4 text-decoration-none navigate">Sign up to drive & deliver</a></h4>
+        <a href="#signingup1" id="signup1" class="text-black fs-4 text-decoration-none navigate">→</a>
       </div>
     </div>
     <!-- Sign up to ride -->
     <div class="col-md-6">
       <div class="p-4 border-bottom">
-        <h4 class="fw-bold">Sign up to ride</h4>
-        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+        <h4 class="fw-bold"><a href="#signingup1" id="signup1" class="text-black fs-4 text-decoration-none navigate">Sign up to ride</a></h4>
+        <a href="#signingup1" id="signup1" class="text-black fs-4 text-decoration-none navigate">→</a>
       </div>
     </div>
     <!-- Sign up to order delivery -->
     <div class="col-md-6">
       <div class="p-4 border-bottom">
-        <h4 class="fw-bold">Sign up to order delivery with TTApp</h4>
-        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+        <h4 class="fw-bold"><a href="#signingup1" id="signup1" class="text-black fs-4 text-decoration-none navigate">Sign up to order delivery with TTApp</a></h4>
+        <a href="#signingup1" id="signup1" class="text-black fs-4 text-decoration-none navigate">→</a>
       </div>
     </div>
     <!-- Sign up for business -->
     <div class="col-md-6">
       <div class="p-4 border-bottom">
-        <h4 class="fw-bold">Sign up to your TTApp Business account</h4>
-        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+        <h4 class="fw-bold"><a href="#signingup1" id="signup1" class="text-black fs-4 text-decoration-none navigate">Sign up to your TTApp Business account</a></h4>
+        <a href="#signingup1" id="signup1" class="text-black fs-4 text-decoration-none navigate">→</a>
       </div>
     </div>
   </div>
 </section>
+
+
+<section id="signingup1" class="section signup1 container my-5" title="signup1">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+      <!-- Form Title -->
+      <h3 class="text-center mb-4">What's your phone number or email?</h3>
+      
+      <!-- Input Field -->
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          placeholder="Enter phone number or email"
+        />
+      </div>
+      
+      <!-- Continue Button -->
+      <div class="d-grid mb-3">
+        <button class="btn btn-dark btn-lg">Continue</button>
+      </div>
+
+      <!-- Divider -->
+      <div class="d-flex align-items-center mb-3">
+        <hr class="flex-grow-1" />
+        <span class="mx-3 text-muted">or</span>
+        <hr class="flex-grow-1" />
+      </div>
+      
+      <!-- Alternative Login Options -->
+      <div class="d-grid gap-3">
+        <!-- Google Button -->
+        <button class="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center">
+          <img
+            src="{{ url_for('static', filename='images/google_logo.png') }}"
+            alt="Google Logo"
+            width="24"
+            class="me-2"
+          />
+          Continue with Google
+        </button>
+        
+        <!-- Apple Button -->
+        <button class="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center">
+          <i class="bi bi-apple me-2 fs-4"></i>
+          Continue with Apple
+        </button>
+        
+        <!-- QR Code Button -->
+        <button class="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center">
+          <i class="bi bi-qr-code-scan me-2 fs-4"></i>
+          Log in with QR code
+        </button>
+      </div>
+
+      <!-- Footer Note -->
+      <p class="text-muted mt-4 text-center small">
+        By proceeding, you consent to get calls, WhatsApp or SMS/RCS messages, 
+        including by automated means, from {{ app_name }} and its affiliates to the number provided.
+      </p>
+    </div>
+  </div>
+</section>
+
 
 <!--------------------------- The signup Page Ends Here ------------------------>
 <!--------------------------- The signup Page Ends Here ------------------------>
@@ -436,30 +503,93 @@
     <!-- Sign in to drive & deliver -->
     <div class="col-md-6">
       <div class="p-4 border-bottom">
-        <h4 class="fw-bold">Sign in to drive & deliver</h4>
-        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+        <h4 class="fw-bold"><a href="#signingin1" id="signin1" class="text-black fs-4 text-decoration-none navigate"> Sign in to drive & deliver </a></h4>
+        <a href="#signingin1" id="signin1" class="text-black fs-4 text-decoration-none navigate">→</a>
       </div>
     </div>
     <!-- Sign in to ride -->
     <div class="col-md-6">
       <div class="p-4 border-bottom">
-        <h4 class="fw-bold">Sign in to ride</h4>
-        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+        <h4 class="fw-bold"><a href="#signingin1" id="signin1" class="text-black fs-4 text-decoration-none navigate"> Sign in to ride </a></h4>
+        <a href="#signingin1" id="signin1" class="text-black fs-4 text-decoration-none navigate">→</a>
       </div>
     </div>
     <!-- Sign in to order delivery -->
     <div class="col-md-6">
       <div class="p-4 border-bottom">
-        <h4 class="fw-bold">Sign in to order delivery with TTApp</h4>
-        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+        <h4 class="fw-bold"><a href="#signingin1" id="signin1" class="text-black fs-4 text-decoration-none navigate">Sign in to order delivery with {{ app_name }} </a></h4>
+        <a href="#signingin1" id="signin1" class="text-black fs-4 text-decoration-none navigate">→</a>
       </div>
     </div>
     <!-- Sign in for business -->
     <div class="col-md-6">
       <div class="p-4 border-bottom">
-        <h4 class="fw-bold">Sign in to your TTApp Business account</h4>
-        <a href="#" class="text-primary fs-4 text-decoration-none">→</a>
+        <h4 class="fw-bold"><a href="#signingin1" id="signin1" class="text-black fs-4 text-decoration-none navigate"> Sign in to your {{ app_name }} Business account </a></h4>
+        <a href="#signingin1" id="signin1" class="text-black fs-4 text-decoration-none navigate">→</a>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="signingin1" class="section signin1 container my-5" title="signin1">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+      <!-- Form Title -->
+      <h3 class="text-center mb-4">What's your phone number or email?</h3>
+      
+      <!-- Input Field -->
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          placeholder="Enter phone number or email"
+        />
+      </div>
+      
+      <!-- Continue Button -->
+      <div class="d-grid mb-3">
+        <button class="btn btn-dark btn-lg">Continue</button>
+      </div>
+
+      <!-- Divider -->
+      <div class="d-flex align-items-center mb-3">
+        <hr class="flex-grow-1" />
+        <span class="mx-3 text-muted">or</span>
+        <hr class="flex-grow-1" />
+      </div>
+      
+      <!-- Alternative Login Options -->
+      <div class="d-grid gap-3">
+        <!-- Google Button -->
+        <button class="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center">
+          <img
+            src="{{ url_for('static', filename='images/google_logo.png') }}"
+            alt="Google Logo"
+            width="24"
+            class="me-2"
+          />
+          Continue with Google
+        </button>
+        
+        <!-- Apple Button -->
+        <button class="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center">
+          <i class="bi bi-apple me-2 fs-4"></i>
+          Continue with Apple
+        </button>
+        
+        <!-- QR Code Button -->
+        <button class="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center">
+          <i class="bi bi-qr-code-scan me-2 fs-4"></i>
+          Log in with QR code
+        </button>
+      </div>
+
+      <!-- Footer Note -->
+      <p class="text-muted mt-4 text-center small">
+        By proceeding, you consent to get calls, WhatsApp or SMS/RCS messages, 
+        including by automated means, from {{ app_name }} and its affiliates to the number provided.
+      </p>
     </div>
   </div>
 </section>
@@ -865,6 +995,135 @@
 
 <!--------------------------- The TTApp Eat Page Ends Here ------------------------>
 <!--------------------------- The TTApp Eat Page Ends Here ------------------------>
+
+
+
+
+
+
+
+
+
+
+
+<!--------- The About us Page is Identified and starts here id=about_us -------------->
+<!--------- The About us Page is Identified and starts here id=about_us -------------->
+
+<section id="about_us" class="section about about-us-section" title="about">
+  <div class="container-fluid p-0">
+    <!-- Hero Section with Image -->
+    <div class="row g-0">
+      <div class="col-12">
+        <div class="about-hero" style="background-image: url('../static/images/about0.PNG'); background-size: cover; background-position: center; height: 400px;">
+          <div class="d-flex align-items-center justify-content-center h-100">
+            <h1 class="text-white display-4 fw-bold">About Us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container py-5">
+    <h2 class="fw-bold mb-4">We reimagine the way the world moves for the better</h2>
+    <p class="text-muted mb-4">
+      Movement is what we power. It’s our lifeblood. It runs through our veins. It’s what gets us out of bed each morning. It pushes us to constantly reimagine how we can move better. For you. For all the places you want to go. For all the things you want to get. For all the ways you want to earn. Across the entire world. In real time. At the incredible speed of now.
+    </p>
+    <a href="#" class="text-decoration-underline text-dark fw-semibold">Read our full mission statement</a>
+  </div>
+</section>
+
+
+<!--------------------------- The About us Page Ends Here ------------------------>
+
+
+
+
+
+
+
+
+
+
+
+<!--------- The Help Page is Identified and starts here id=drive -------------->
+<!--------- The Help Page is Identified and starts here id=drive -------------->
+
+<section id="help" class="section help0 container-fluid bg-light text-center py-5 help_bg" title="help0">
+  <div class="container">
+    <!-- Header Section -->
+    <h1 class="fw-bold mb-3">Welcome to {{ app_name }} Support</h1>
+    <p class="text-black mb-5">
+      We’re here to help. Looking for customer service contact information? Explore support 
+      resources for the relevant products below to find the best way to reach out about your issue.
+    </p>
+
+    <!-- Support Categories -->
+    <div class="row justify-content-center g-4">
+      <!-- Riders -->
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-car-front fs-1 mb-3"></i>
+          <h5 class="card-title">Riders</h5>
+        </div>
+      </div>
+      
+      <!-- Driving & Delivering -->
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-steering-wheel fs-1 mb-3"></i>
+          <h5 class="card-title">Driving & Delivering</h5>
+        </div>
+      </div>
+      
+      <!-- TTApp Eats -->
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-cup-straw fs-1 mb-3"></i>
+          <h5 class="card-title">TTApp Eats</h5>
+        </div>
+      </div>
+      
+      <!-- Merchants & Restaurants -->
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-shop-window fs-1 mb-3"></i>
+          <h5 class="card-title">Merchants & Restaurants</h5>
+        </div>
+      </div>
+      
+      <!-- Bikes & Scooters -->
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-bicycle fs-1 mb-3"></i>
+          <h5 class="card-title">Bikes & Scooters</h5>
+        </div>
+      </div>
+      
+      <!-- TTApp for Business -->
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-briefcase fs-1 mb-3"></i>
+          <h5 class="card-title">TTApp for Business</h5>
+        </div>
+      </div>
+      
+      <!-- Freight -->
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-truck fs-1 mb-3"></i>
+          <h5 class="card-title">Freight</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- The Help Page Ends Here ------------------------>
+<!--------------------------- The Help Page Ends Here ------------------------>
+
+
+
 
 
 

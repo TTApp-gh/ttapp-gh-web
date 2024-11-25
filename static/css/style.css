@@ -894,6 +894,17 @@ hr {
   }
 }
 
+/* Adjust icon alignment in buttons */
+button .bi {
+  vertical-align: middle;
+}
+
+/* Add hover effects to buttons */
+button:hover {
+  background-color: #f0f0f0;
+}
+
+
 
 /* Signup section ends Here */
 
@@ -902,8 +913,9 @@ hr {
 /* Signin section starts Here */
 /* Optional: Add hover effects for links */
 a.text-decoration-none:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  olor: #0056b3;
+  color: #000;
+  text-decoration: none;
 }
 
 /* Optional: Add space between rows on smaller screens */
@@ -911,3 +923,33 @@ a.text-decoration-none:hover {
   margin-bottom: 20px;
 }
 /* Signin section ends Here */
+
+
+/* Help Page Starts Here */
+.help_bg{
+	background-image: url('../images/help_bg.jpg');
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* Help Page Ends Here */
+
+
+/* About us Page Starts Here */
+.about-hero {
+  position: relative;
+  color: #ffffff;
+}
+
+.about-hero h1 {
+  background: rgba(0, 0, 0, 0.5); /* Optional for better contrast */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+/* About us Page Ends Here */
+
