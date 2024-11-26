@@ -68,7 +68,7 @@
     <div class="container">
         <h1>Your ride, on demand</h1>
         <p>Get a reliable ride in minutes with the {{ app_name }}.</p>
-        <a href="#" class="btn btn-light">Get Started</a>
+        <a href="#riding" id="ride" class="btn btn-light navigate">Get Started</a>
     </div>
 </section>
 
