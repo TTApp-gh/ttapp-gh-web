@@ -191,8 +191,8 @@
             <div class="col-md-6">
                 <h2>Drive when you want, make what you need</h2>
                 <p>Make money on your schedule with deliveries or rides—or both. You can use your own car or choose a rental through {{ app_name }}.</p>
-                <a href="#" class="btn btn-dark mb-3">Get started</a>
-                <p>Already have an account? <a href="#">Sign in</a></p>
+                <a href="#login" id="signin" class="btn btn-dark mb-3 navigate">Get started</a>
+                <p>Already have an account? <a href="#login" id="signin" class="text-black navigate">Sign in</a></p>
             </div>
         </div>
     </div>
@@ -207,8 +207,8 @@
             <div class="col-md-6">
                 <h2>The {{ app_name }} you know, reimagined for business</h2>
                 <p>{{ app_name }} for Business is a platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
-                <a href="#" class="btn btn-dark mb-3">Get started</a>
-                <a href="#" class="ml-3">Check out our solutions</a>
+                <a href="#business" id="biz" class="btn btn-dark mb-3 navigate">Get started</a>
+                <a href="#business" id="biz" class="ml-3 text-black navigate">Check out our solutions</a>
             </div>
             <!-- Image Column -->
             <div class="col-md-6">
