@@ -951,5 +951,68 @@ a.text-decoration-none:hover {
   padding: 10px 20px;
   border-radius: 8px;
 }
+
+.ceo-image {
+  position: relative;
+}
+
+.ceo-sustainability-section h2 {
+  color: #000000;
+}
+
+.ceo-sustainability-section .btn-dark {
+  background-color: #333;
+  border-color: #333;
+}
+
+.ceo-sustainability-section .btn-dark:hover {
+  background-color: #555;
+  border-color: #555;
+}
+
+.ttapp-section {
+  padding: 50px 0;
+}
+
+.ttapp-section h2 {
+  color: #000000;
+}
+
+.ttapp-section .text-muted {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ttapp-section img {
+  border-radius: 8px;
+}
+
+.ttapp-company-info {
+  background-color: #f9f9f9;
+}
+
+.ttapp-company-info h2 {
+  color: #333;
+}
+
+.ttapp-company-info .card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ttapp-company-info .card-body {
+  padding: 20px;
+}
+
+.ttapp-company-info .card-title {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.ttapp-company-info .card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 /* About us Page Ends Here */
 

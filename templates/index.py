@@ -35,8 +35,8 @@
 				<li id="eat" class="nav-item navigate">
                     <a class="nav-link" href="#eating">{{ app_name }} Eats</a>
                 </li>
-				<li id="business" class="nav-item navigate">
-                    <a class="nav-link" href="#bussiness">{{ app_name }} for Business</a>
+				<li id="biz" class="nav-item navigate">
+                    <a class="nav-link" href="#business">{{ app_name }} for Business</a>
                 </li>
 				<li id="account" class="nav-item navigate">
                     <a class="nav-link" href="#account">Manage Account</a>
@@ -199,14 +199,14 @@
 </section>
 
 
-<!-- Uber for Business Section -->
+<!-- TTApp for Business Section -->
 <section class="section home uber-business-section py-5">
     <div class="container">
         <div class="row align-items-center">
             <!-- Text Column -->
             <div class="col-md-6">
                 <h2>The {{ app_name }} you know, reimagined for business</h2>
-                <p>Uber for Business is a platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
+                <p>{{ app_name }} for Business is a platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
                 <a href="#" class="btn btn-dark mb-3">Get started</a>
                 <a href="#" class="ml-3">Check out our solutions</a>
             </div>
@@ -233,7 +233,7 @@
             </div>
             <div class="col-md-4">
                 <div class="service-icon mb-3">&#127758;</div>
-                <h5>Uber Eats</h5>
+                <h5>{{ app_name }} Eats</h5>
                 <p>Order food from your favorite restaurants, delivered straight to your door.</p>
             </div>
             <div class="col-md-4">
@@ -245,42 +245,8 @@
     </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="section home testimonial-section bg-light">
-    <div class="container">
-        <h2>What Our Customers Say</h2>
-        <p>See why people love using {{ app_name }}.</p>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <p>"Uber has made my life so much easier. I can get a ride anytime, anywhere!"</p>
-                        <h6>- John Doe</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <p>"Quick, easy, and reliable! Uber Eats is my go-to for food delivery."</p>
-                        <h6>- Sarah Lee</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <p>"The best option for safe and affordable transportation."</p>
-                        <h6>- Mike Johnson</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Pricing Table Section -->
-<section class="section home pricing-section">
+<section id="business" class="section home biz pricing-section" title="biz">
     <div class="container">
         <h2>Pricing Plans</h2>
         <p>Choose a plan that fits your budget.</p>
@@ -334,17 +300,51 @@
     </div>
 </section>
 
+<!-- Testimonials Section -->
+<section class="section home biz testimonial-section bg-light">
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+        <p>See why people love using {{ app_name }}.</p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p>"{{ app_name }} has made my life so much easier. I can get a ride anytime, anywhere!"</p>
+                        <h6>- John Doe</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p>"Quick, easy, and reliable! {{ app_name }} Eats is my go-to for food delivery."</p>
+                        <h6>- Sarah Lee</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p>"The best option for safe and affordable transportation."</p>
+                        <h6>- Mike Johnson</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- Download the App Section -->
-<section class="section home download-app-section py-5" style="background-color: #f8f9fa;">
+<section class="section home biz download-app-section py-5" style="background-color: #f8f9fa;">
     <div class="container text-center">
         <h2 class="mb-4">It's easier in the apps</h2>
         <div class="row justify-content-center">
-            <!-- Uber App Card -->
+            <!-- TTApp App Card -->
             <div class="col-md-4">
                 <div class="card p-3 mb-4 shadow-sm">
                     <div class="card-body text-center">
-                        <img src="{{ url_for('static', filename='images/qr_code.jpeg') }}" alt="Uber App QR Code" class="img-fluid mb-3">
+                        <img src="{{ url_for('static', filename='images/qr_code.jpeg') }}" alt="{{ app_name }} App QR Code" class="img-fluid mb-3">
                         <h5 class="card-title">Download the {{ app_name }}</h5>
                         <p class="card-text text-muted">Scan to download</p>
                     </div>
@@ -1033,7 +1033,134 @@
   </div>
 </section>
 
+<section class="section about ceo-sustainability-section">
+  <div class="container-fluid">
+    <!-- CEO Section -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 p-0">
+        <div class="ceo-image" style="background-image: url('../static/images/CEO.jpg'); background-size: cover; background-position: center; height: 300px;">
+          <!-- Empty space for the CEO image -->
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start py-4 px-3">
+        <h2 class="fw-bold mb-3">CEO</h2>
+        <p class="text-muted">
+          Read about our team’s commitment to provide everyone on our global platform with the technology that can help them move ahead.
+        </p>
+        <a href="#" class="btn btn-dark fw-bold px-4 py-2">Read the CEO's letter</a>
+      </div>
+    </div>
 
+    <!-- Sustainability Section -->
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-lg-2 p-0">
+        <img src="{{ url_for('static', filename='images/sustainability.PNG') }}" alt="Sustainability Image" class="img-fluid">
+      </div>
+      <div class="col-lg-6 order-lg-1 d-flex flex-column justify-content-center py-4 px-3">
+        <h2 class="fw-bold mb-3">Sustainability</h2>
+        <p class="text-muted">
+          {{ app_name }} is committing to becoming a fully electric, zero-emission platform by 2040, with 100% of rides taking place in zero-emission vehicles, on public transit, or with micromobility.
+        </p>
+        <p class="text-muted">
+          It is our responsibility to aggressively tackle the challenge of climate change. We aim to provide riders with greener options, help drivers go electric, and make transparency a priority.
+        </p>
+        <a href="#" class="text-decoration-underline text-dark fw-semibold">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+<br />
+<section class="section about ttapp-section">
+  <div class="container">
+    <!-- Rides and Beyond Section -->
+    <div class="row align-items-center mb-5">
+      <!-- Image Column -->
+      <div class="col-lg-6">
+        <img src="{{ url_for('static', filename='images/road.PNG') }}" alt="Highway" class="img-fluid rounded">
+      </div>
+      <!-- Content Column -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">Rides and beyond</h2>
+        <p class="text-muted">
+          In addition to helping riders find a way to go from point A to point B, {{ app_name }} helps people order food quickly and affordably, removes barriers to healthcare, creates new freight-booking solutions, and helps companies provide a seamless employee travel experience. We also ensure drivers and couriers earn fairly.
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-decoration-underline text-dark fw-semibold">How to use {{ app_name }}</a>
+          <a href="#" class="text-decoration-underline text-dark fw-semibold">Our offerings</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your Safety Drives Us Section -->
+    <div class="row align-items-center">
+      <!-- Content Column -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">Your safety drives us</h2>
+        <p class="text-muted">
+          Whether you're in the back seat or behind the wheel, your safety is essential. At {{ app_name }}, we are committed to ensuring safety at every step. Technology is at the heart of our approach, partnering with safety advocates and developing new technologies to improve safety, making it easier for everyone to get around.
+        </p>
+        <a href="#" class="text-decoration-underline text-dark fw-semibold">Learn more</a>
+      </div>
+      <!-- Image/Icon Column -->
+      <div class="col-lg-6 text-center">
+        <img src="{{ url_for('static', filename='images/safety.PNG') }}" alt="Safety Shield Icon" class="img-fluid" style="max-height: 400px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section about ttapp-company-info py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-5 text-center">Company Info</h2>
+    <div class="row">
+      <!-- Card 1: Who's driving TTApp -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="{{ url_for('static', filename='images/info1.PNG') }}" class="card-img-top" alt="Leadership Presentation">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Who's driving {{ app_name }}</h5>
+            <p class="card-text text-muted">
+              We're building a culture within {{ app_name }} that emphasizes doing the right thing for riders, drivers, and employees. Find out more about the team that's leading the way.
+            </p>
+            <a href="#" class="text-decoration-underline text-dark fw-semibold">See our leadership</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Getting diversity right -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="{{ url_for('static', filename='images/info2.PNG') }}" class="card-img-top" alt="Diversity Team">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Getting diversity right</h5>
+            <p class="card-text text-muted">
+              At {{ app_name }}, our goal is to create a workplace that is inclusive and reflects the diversity of the cities we serve, ensuring everyone can thrive.
+            </p>
+            <a href="#" class="text-decoration-underline text-dark fw-semibold">Read about diversity</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Acting with integrity -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="{{ url_for('static', filename='images/info3.PNG') }}" class="card-img-top" alt="Integrity Discussion">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Acting with integrity</h5>
+            <p class="card-text text-muted">
+              {{ app_name }}'s Ethics & Compliance Program reflects our commitment to transparency and ethical standards across all aspects of our business.
+            </p>
+            <a href="#" class="text-decoration-underline text-dark fw-semibold">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--------------------------- The About us Page Ends Here ------------------------>
 <!--------------------------- The About us Page Ends Here ------------------------>
 
 
@@ -1080,7 +1207,7 @@
       <div class="col-lg-2 col-md-4 col-sm-6">
         <div class="card border-0 shadow-sm p-3">
           <i class="bi bi-cup-straw fs-1 mb-3"></i>
-          <h5 class="card-title">TTApp Eats</h5>
+          <h5 class="card-title">{{ app_name }} Eats</h5>
         </div>
       </div>
       
@@ -1104,7 +1231,7 @@
       <div class="col-lg-2 col-md-4 col-sm-6">
         <div class="card border-0 shadow-sm p-3">
           <i class="bi bi-briefcase fs-1 mb-3"></i>
-          <h5 class="card-title">TTApp for Business</h5>
+          <h5 class="card-title">{{ app_name }} for Business</h5>
         </div>
       </div>
       
@@ -1156,7 +1283,7 @@
           <li><a href="#">Ride</a></li>
           <li><a href="#">Drive</a></li>
           <li><a href="#">Deliver</a></li>
-          <li><a href="#">TTApp Freight</a></li>
+          <li><a href="#">{{ app_name }} Freight</a></li>
           <li><a href="#">Gift cards</a></li>
         </ul>
       </div>

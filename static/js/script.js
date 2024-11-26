@@ -133,3 +133,10 @@ function initMap() {
 function handleLocationError(browserHasGeolocation, pos) {
 	alert(browserHasGeolocation ? "Error: The Geolocation service failed." : "Error: Your browser doesn't support geolocation.");
 }
+
+// This code here refreshes the page on click of a backward or forward button
+window.addEventListener('popstate', (event) => {
+    console.log('Back or forward button clicked!');
+    console.log('Refreshing the page...');
+    location.reload(); // Reload the page
+});
