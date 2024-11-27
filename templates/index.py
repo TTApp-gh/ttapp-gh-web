@@ -637,7 +637,7 @@
           <div class="d-flex align-items-center mb-5">
             <div class="profile-image position-relative me-3">
               <img
-                src="https://via.placeholder.com/80"
+                src="{{ url_for('static', filename='images/CEO.jpg') }}"
                 alt="Profile Image"
                 class="rounded-circle border"
               />
