@@ -1014,5 +1014,72 @@ a.text-decoration-none:hover {
   line-height: 1.5;
 }
 
+.ttapp-latest .icon {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.ttapp-latest h5 {
+  font-size: 1.2rem;
+}
+
+.ttapp-latest .btn-dark {
+  background-color: #000;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
 /* About us Page Ends Here */
+
+
+
+
+
+/* Manage Account us Page starts Here */
+.ttapp-account-info .profile-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.ttapp-account-info .list-group-item {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.ttapp-account-info .list-group-item h6 {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.ttapp-account-info .list-group-item p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.ttapp-security .list-group-item {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.ttapp-security .list-group-item h6 {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.ttapp-security .list-group-item p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.ttapp-security .btn-outline-danger {
+  font-size: 0.85rem;
+}
+
+.ttapp-security .bg-white {
+  background-color: #fff !important;
+}
+/* Manage Account us Page Ends Here */
 

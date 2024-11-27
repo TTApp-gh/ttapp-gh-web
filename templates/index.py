@@ -38,7 +38,7 @@
 				<li id="biz" class="nav-item navigate">
                     <a class="nav-link" href="#business">{{ app_name }} for Business</a>
                 </li>
-				<li id="account" class="nav-item navigate">
+				<li id="accounts" class="nav-item navigate">
                     <a class="nav-link" href="#account">Manage Account</a>
                 </li>
                 <li id="about" class="nav-item navigate">
@@ -609,6 +609,226 @@
 
 
 
+
+<!--------------------------- The Manage Account Page starts Here ------------------------>
+<!--------------------------- The Manage Account Page starts Here ------------------------>
+
+<section id="account" class="section account1 ttapp-account-info" title="account1">
+  <div class="container-fluid p-0">
+    <!-- Sidebar and Main Content Wrapper -->
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-3 bg-dark text-white py-4">
+        <h5 class="text-uppercase fw-bold px-4">TTApp Account</h5>
+        <nav class="nav flex-column px-4 mt-4">
+          <a href="#account" id="account1" class="navigate nav-link text-white active">Account Info</a>
+          <a href="#security" id="security1" class="navigate nav-link text-white">Security</a>
+          <a href="#privacy" id="privacy1" class="navigate nav-link text-white">Privacy & Data</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="col-md-9 bg-light py-5">
+        <div class="container">
+          <!-- Section Header -->
+          <h2 class="fw-bold mb-4">Account Info</h2>
+
+          <!-- Profile Info -->
+          <div class="d-flex align-items-center mb-5">
+            <div class="profile-image position-relative me-3">
+              <img
+                src="https://via.placeholder.com/80"
+                alt="Profile Image"
+                class="rounded-circle border"
+              />
+              <button
+                class="btn btn-sm btn-light border rounded-circle position-absolute"
+                style="bottom: 0; right: 0;"
+              >
+                <i class="bi bi-pencil"></i>
+              </button>
+            </div>
+            <div>
+              <h4 class="fw-semibold mb-0">Basic Info</h4>
+            </div>
+          </div>
+
+          <!-- Info Cards -->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <h6 class="mb-1">Name</h6>
+                <p class="mb-0">Abraham Livinus</p>
+              </div>
+              <a href="#" class="text-decoration-none">
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <h6 class="mb-1">Phone number</h6>
+                <p class="mb-0">+2348109214791 <i class="bi bi-check-circle text-success"></i></p>
+              </div>
+              <a href="#" class="text-decoration-none">
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <h6 class="mb-1">Email</h6>
+                <p class="mb-0">abrahamlivinus@gmail.com <i class="bi bi-check-circle text-success"></i></p>
+              </div>
+              <a href="#" class="text-decoration-none">
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="security" class="section security1 ttapp-security" title="security1">
+  <div class="container-fluid p-0">
+    <!-- Sidebar and Main Content Wrapper -->
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-3 bg-dark text-white py-4">
+        <h5 class="text-uppercase fw-bold px-4">TTApp Account</h5>
+        <nav class="nav flex-column px-4 mt-4">
+          <a href="#account" id="account1" class="navigate nav-link text-white">Account Info</a>
+          <a href="#security" id="security1" class="navigate nav-link text-white active">Security</a>
+          <a href="#privacy" id="privacy1" class="navigate nav-link text-white">Privacy & Data</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="col-md-9 bg-light py-5">
+        <div class="container">
+          <!-- Section Header -->
+          <h2 class="fw-bold mb-4">Security</h2>
+
+          <!-- Logging In Section -->
+          <div class="mb-5">
+            <h4 class="fw-semibold mb-3">Logging in to TTApp</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <h6 class="mb-1">Password</h6>
+                </div>
+                <a href="#" class="text-decoration-none">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <h6 class="mb-1">Passkeys</h6>
+                  <p class="mb-0 text-muted">
+                    Passkeys are easier and more secure than passwords.
+                  </p>
+                </div>
+                <a href="#" class="text-decoration-none">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <h6 class="mb-1">Authenticator app</h6>
+                  <p class="mb-0 text-muted">
+                    Set up your authenticator app to add an extra layer of security.
+                  </p>
+                </div>
+                <a href="#" class="text-decoration-none">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <h6 class="mb-1">2-step verification</h6>
+                  <p class="mb-0 text-muted">
+                    Add additional security to your account with 2-step verification.
+                  </p>
+                </div>
+                <a href="#" class="text-decoration-none">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Connected Social Apps Section -->
+          <div class="mb-5">
+            <h4 class="fw-semibold mb-3">Connected social apps</h4>
+            <p class="text-muted">
+              You've allowed these social apps to sign in to your TTApp account.
+            </p>
+            <div class="d-flex justify-content-between align-items-center bg-white p-3 border rounded">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-google fs-4 text-muted me-3"></i>
+                <span>Google</span>
+              </div>
+              <button class="btn btn-outline-danger btn-sm">Disconnect</button>
+            </div>
+          </div>
+
+          <!-- Login Activity Section -->
+          <div>
+            <h4 class="fw-semibold mb-3">Login activity</h4>
+            <p class="text-muted">
+              You're logged in or have been logged in on these devices within the last 30 days. Multiple logins from the same device may appear.
+            </p>
+            <div class="bg-white p-3 border rounded d-flex align-items-start">
+              <i class="bi bi-laptop fs-3 text-muted me-3"></i>
+              <div>
+                <h6 class="mb-1">Chrome on Windows</h6>
+                <p class="mb-0 text-primary">Your current login</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy" class="section privacy1 container-fluid bg-dark text-light" title="privacy1">
+  <div class="row">
+    <div class="col-md-3">
+      <nav class="nav flex-column px-4 mt-4">
+          <a href="#account" id="account1" class="navigate nav-link text-white">Account Info</a>
+          <a href="#security" id="security1" class="navigate nav-link text-white">Security</a>
+          <a href="#privacy" id="privacy1" class="navigate nav-link text-white active">Privacy & Data</a>
+        </nav>
+    </div>
+
+    <div class="col-md-9">
+      <h2 class="mt-3">Privacy & Data</h2>
+      <h4 class="mt-4">Privacy Center</h4>
+      <p>Take control of your privacy and learn how we protect it.</p>
+
+      <h4 class="mt-4">Third-party apps with account access</h4>
+      <p>Once you allow access to third-party apps, you'll see them here. <a href="#third_party" id="third_party1" class="navigate text-white">Learn more</a></p>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- The Manage Account Page Ends Here ------------------------>
+<!--------------------------- The Manage Account Page Ends Here ------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--------- The Drive Page is Identified and starts here id=drive -------------->
 <!--------- The Drive Page is Identified and starts here id=drive -------------->
 <section id="driver" class="section drive drive-section" title="drive">
@@ -1158,7 +1378,60 @@
   </div>
 </section>
 
-
+<section class="section about ttapp-latest py-5">
+  <div class="container">
+    <!-- Section Header -->
+    <h2 class="fw-bold text-center mb-5">Keep up with the latest</h2>
+    <div class="row text-center">
+      <!-- Newsroom -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="icon mb-3">
+          <i class="bi bi-megaphone" style="font-size: 2rem; color: #333;"></i>
+        </div>
+        <h5 class="fw-bold">Newsroom</h5>
+        <p class="text-muted">
+          Get announcements about partnerships, app updates, initiatives, and more near you and around the world.
+        </p>
+        <a href="#" class="text-decoration-underline text-dark fw-semibold">Go to Newsroom</a>
+      </div>
+      <!-- Blog -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="icon mb-3">
+          <i class="bi bi-journal-text" style="font-size: 2rem; color: #333;"></i>
+        </div>
+        <h5 class="fw-bold">Blog</h5>
+        <p class="text-muted">
+          Find new places to explore and learn about TTApp products, partnerships, and more.
+        </p>
+        <a href="#" class="text-decoration-underline text-dark fw-semibold">Read our posts</a>
+      </div>
+      <!-- Investor Relations -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="icon mb-3">
+          <i class="bi bi-graph-up" style="font-size: 2rem; color: #333;"></i>
+        </div>
+        <h5 class="fw-bold">Investor relations</h5>
+        <p class="text-muted">
+          Download financial reports, see next-quarter plans, and read about our corporate responsibility initiatives.
+        </p>
+        <a href="#" class="text-decoration-underline text-dark fw-semibold">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <!-- Call to Action -->
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h3 class="fw-bold">Come reimagine with us</h3>
+        <p class="text-muted">Join our team to build innovative solutions that redefine the way people connect and explore.</p>
+        <a href="#" class="btn btn-dark px-4 py-2">Search open roles</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="{{ url_for('static', filename='images/globe.PNG') }}" alt="Globe illustration" class="img-fluid" style="max-height: 400px;">
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--------------------------- The About us Page Ends Here ------------------------>
 <!--------------------------- The About us Page Ends Here ------------------------>
