@@ -619,8 +619,8 @@
         Make the most of your time on the road on the platform with the largest network of active riders.
       </p>
       <div class="drive-buttons">
-        <a href="#" class="btn-primary">Sign up to drive</a>
-        <a href="#" class="btn-secondary">Already have an account? Sign in</a>
+        <a href="#signingup" id="signup" class="btn-primary navigate">Sign up to drive</a>
+        <a href="#login" id="signin" class="btn-secondary navigate">Already have an account? Sign in</a>
       </div>
     </div>
     <div class="drive-image">
@@ -674,7 +674,7 @@
         <p>
           You’ll need a valid email address and cell phone number to sign up. Requirements vary by region, so we’ll show you what’s needed for your city.
         </p>
-        <a href="#">Sign up online</a>
+        <a href="#signingup" id="signup" class="navigate text-dark">Sign up online</a>
       </div>
       <div class="step">
         <span class="step-icon">📋</span>
@@ -682,7 +682,7 @@
         <p>
           Most people are eligible to drive with Uber. Here’s what you need to know if you’re driving in Lagos or Abuja.
         </p>
-        <a href="#">Requirements</a>
+        <a href="#" class="navigate text-dark">Requirements</a>
       </div>
       <div class="step">
         <span class="step-icon">✔️</span>
@@ -690,7 +690,7 @@
         <p>
           You can sign up even if you don’t have a car that meets the vehicle requirements in Nigeria right now.
         </p>
-        <a href="#">Vehicle requirements</a>
+        <a href="#" class="navigate text-dark">Vehicle requirements</a>
       </div>
     </div>
   </div>
@@ -709,7 +709,7 @@
         <p>
           Let’s make every {{ app_name }} trip hassle-free. Our support pages can help you set up your account, get started with the app, adjust fares, and much more.
         </p>
-        <a href="#">Get help</a>
+        <a href="#" class="navigate text-dark">Get help</a>
       </div>
       <div class="extra">
         <div class="icon-container">
@@ -719,7 +719,7 @@
         <p>
           Got questions? Get answers. Enjoy personal support at an {{ app_name }} Greenlight Hub in Lagos or Abuja.
         </p>
-        <a href="#">Contact us</a>
+        <a href="#" class="navigate text-dark">Contact us</a>
       </div>
       <div class="extra">
         <div class="icon-container">
@@ -729,7 +729,7 @@
         <p>
           The {{ app_name }} is full of features that help you stay safe and confident before, during, and after every trip. And if you need help, {{ app_name }} gives you 24/7 support.
         </p>
-        <a href="#">Read more about safety</a>
+        <a href="#" class="navigate text-dark">Read more about safety</a>
       </div>
     </div>
   </div>
@@ -742,7 +742,7 @@
       <p>
         Easy to use and reliable, the app was built for drivers, with drivers.
       </p>
-      <a href="#" class="learn-more">Learn more</a>
+      <a href="#" class="learn-more text-dark navigate">Learn more</a>
     </div>
     <div class="image-content">
       <img src="{{ url_for('static', filename='images/driver_app_image.PNG') }}" alt="Driver app interface on mobile" />
@@ -832,7 +832,7 @@
   <div class="sign-up-container">
     <div class="sign-up-header">
       <h2>Sign up to drive</h2>
-      <a href="#" class="cta-arrow">
+      <a href="#signingup" id="signup" class="cta-arrow navigate">
         <span>→</span>
       </a>
     </div>
@@ -1269,7 +1269,7 @@
       <div class="footer-column">
         <h4>Company</h4>
         <ul>
-          <li><a href="#">About us</a></li>
+          <li><a href="#about_us" id="about" class="navigate">About us</a></li>
           <li><a href="#">Our offerings</a></li>
           <li><a href="#">Newsroom</a></li>
           <li><a href="#">Investors</a></li>
@@ -1305,10 +1305,10 @@
     </div>
     <div class="footer-bottom">
       <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61566501765378&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/company/ttapp/"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
       <div class="app-store-links">
