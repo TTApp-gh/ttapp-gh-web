@@ -1083,3 +1083,73 @@ a.text-decoration-none:hover {
 }
 /* Manage Account us Page Ends Here */
 
+
+/* Countact us Page Starts Here */
+.ttapp-contact {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.ttapp-contact h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.ttapp-contact p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.ttapp-contact img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.ttapp-support h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.ttapp-support h5 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.ttapp-support p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.ttapp-support a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ttapp-support img {
+  border-radius: 8px;
+}
+/* Countact us Page Ends Here */
+
+
+/* Privacy Page Startss Here */
+.ttapp-privacy h2, .ttapp-privacy h4 {
+  color: #333;
+}
+
+.ttapp-privacy .card {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+.ttapp-privacy .list-group-item {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.ttapp-privacy .list-group-item a {
+  font-weight: bold;
+  text-decoration: none;
+}
+/* Privacy Page Ends Here */
+

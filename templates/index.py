@@ -805,8 +805,10 @@
 
     <div class="col-md-9">
       <h2 class="mt-3">Privacy & Data</h2>
-      <h4 class="mt-4">Privacy Center</h4>
-      <p>Take control of your privacy and learn how we protect it.</p>
+      <a href="#privacy0" id="privacy2" class="navigate text-white">
+        <h4 class="mt-4">Privacy Center</h4>
+        <p>Take control of your privacy and learn how we protect it.</p>
+      </a>
 
       <h4 class="mt-4">Third-party apps with account access</h4>
       <p>Once you allow access to third-party apps, you'll see them here. <a href="#third_party" id="third_party1" class="navigate text-white">Learn more</a></p>
@@ -929,7 +931,7 @@
         <p>
           Let’s make every {{ app_name }} trip hassle-free. Our support pages can help you set up your account, get started with the app, adjust fares, and much more.
         </p>
-        <a href="#" class="navigate text-dark">Get help</a>
+        <a href="#help" id="help0" class="navigate text-dark">Get help</a>
       </div>
       <div class="extra">
         <div class="icon-container">
@@ -939,7 +941,7 @@
         <p>
           Got questions? Get answers. Enjoy personal support at an {{ app_name }} Greenlight Hub in Lagos or Abuja.
         </p>
-        <a href="#" class="navigate text-dark">Contact us</a>
+        <a href="#contact" id="contact1" class="navigate text-dark">Contact us</a>
       </div>
       <div class="extra">
         <div class="icon-container">
@@ -1446,6 +1448,93 @@
 
 
 
+
+
+<!--------------------------- The Contact us Page starts Here ------------------------>
+<!--------------------------- The Contact us Page starts Here ------------------------>
+
+<section id="contact" class="section contact1 ttapp-contact" title="contact1">
+  <div class="container-fluid py-5">
+    <div class="row align-items-center">
+      <!-- Left Text Section -->
+      <div class="col-md-6 px-5">
+        <h1 class="fw-bold mb-3">Contact {{ app_name }} in Nigeria</h1>
+        <p class="text-muted">
+          Have questions about driving with {{ app_name }}? We're here for whatever you need.
+        </p>
+      </div>
+
+      <!-- Right Image Section -->
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/contact.PNG') }}" alt="Contact TTApp in Nigeria" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact1 ttapp-support py-5">
+  <div class="container">
+    <!-- Get More Information Section -->
+    <div class="row mb-5">
+      <div class="col-12 mb-4">
+        <h3 class="fw-bold">Get more information</h3>
+      </div>
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="{{ url_for('static', filename='images/driver_app.PNG') }}" alt="Driver App Basics" class="me-3" style="width: 50px; height: 50px;">
+        <div>
+          <h5>Driver App Basics</h5>
+          <p class="text-muted">Find information about how to take trips with the {{ app_name }}, where to see your earnings, and more.</p>
+          <a href="#driver" id="drive" class="navigate text-primary text-dark">Learn more</a>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="{{ url_for('static', filename='images/help_img.PNG') }}" alt="Help Center" class="me-3" style="width: 50px; height: 50px;">
+        <div>
+          <h5>Help Center</h5>
+          <p class="text-muted">Browse frequently asked questions from drivers.</p>
+          <a href="#help" id="help1" class="navigate text-primary text-dark">Get help</a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- In-Person Support Section -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="fw-bold">In-person support</h3>
+        <p class="text-muted">
+          In some cities, you might be able to get support in person at a {{ app_name }} location.
+        </p>
+        <p class="text-muted">
+          To check availability, go to <strong>Help</strong> in your Driver app, then <strong>Book an in-person appointment</strong>, choose the issue you need help with, and tap <strong>Schedule an appointment</strong> if you want more help. Or you can visit our website.
+        </p>
+        <h5>Business hours</h5>
+        <ul class="list-unstyled text-muted">
+          <li>Monday & Tuesday: 9am - 5pm</li>
+          <li>Wednesday: 9am - 4:30pm</li>
+          <li>Thursday & Friday: 9am - 5pm</li>
+        </ul>
+        <a href="#" class="text-primary text-dark">Book an appointment</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="{{ url_for('static', filename='images/support.PNG') }}" alt="In-person Support" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- The Contact us Page Ends Here ------------------------>
+<!--------------------------- The Contact us Page Ends Here ------------------------>
+
+
+
+
+
+
+
+
+
+
+
 <!--------- The Help Page is Identified and starts here id=drive -------------->
 <!--------- The Help Page is Identified and starts here id=drive -------------->
 
@@ -1531,6 +1620,111 @@
 
 
 
+
+
+<!--------------------------- The Privacy Page Starts Here ------------------------>
+<!--------------------------- The Privacy Page Starts Here ------------------------>
+
+<section id="privacy0" class="section privacy2 ttapp-privacy py-5" title="privacy2">
+  <div class="container">
+    <!-- Privacy Center Heading -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Privacy Center</h2>
+      <p class="text-muted">Take control of your privacy and learn how we protect it.</p>
+    </div>
+
+    <!-- Section 1: Your Data and Privacy -->
+    <div class="mb-5">
+      <h4 class="fw-bold mb-4">Your data and privacy at {{ app_name }}</h4>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <img src="{{ url_for('static', filename='images/summary.PNG') }}" alt="Data Summary" class="card-img-top mb-3" style="height: 100px; object-fit: contain;">
+            <div class="card-body">
+              <p class="card-text">Would you like to see a summary of how you use {{ app_name }}?</p>
+              <a href="#" class="btn btn-outline-primary text-white bg-dark">See summary</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <img src="{{ url_for('static', filename='images/view.PNG') }}" alt="Data Shape" class="card-img-top mb-3" style="height: 100px; object-fit: contain;">
+            <div class="card-body">
+              <p class="card-text">How does your data shape your trip experience?</p>
+              <a href="#" class="btn btn-outline-primary text-white bg-dark">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <img src="{{ url_for('static', filename='images/request.PNG') }}" alt="Personal Data" class="card-img-top mb-3" style="height: 100px; object-fit: contain;">
+            <div class="card-body">
+              <p class="card-text">Would you like a copy of your personal data?</p>
+              <a href="#" class="btn btn-outline-primary text-white bg-dark">Request</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Ads and Data -->
+    <div class="mb-5">
+      <h4 class="fw-bold mb-4">Ads and Data</h4>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Offers and Promos from {{ app_name }}
+          <span class="text-muted">Control personalized offers and promos</span>
+          <a href="#" class="text-primary">></a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Data Tracking
+          <span class="text-muted">Control Data Tracking for Personalized Ads</span>
+          <a href="#" class="text-primary">></a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Ads on {{ app_name }} Eats
+          <span class="text-muted">Control personalized ads you see in Eats</span>
+          <a href="#" class="text-primary">></a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Ads on Rides
+          <span class="text-muted">Control personalized ads you see on Rides</span>
+          <a href="#" class="text-primary">></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Section 3: Account Security and Privacy Approach -->
+    <div class="mb-5">
+      <h4 class="fw-bold mb-4">Account Security</h4>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Account Deletion</span>
+        <a href="#" class="text-primary">></a>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <h4 class="fw-bold">How do we approach privacy at TTApp?</h4>
+      <div class="mt-4">
+        <a href="#" class="btn btn-outline-primary me-3 text-white bg-dark">Check out Privacy Overview Page</a>
+        <a href="#" class="btn btn-outline-primary text-white bg-dark">Submit a privacy inquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- The Privacy Page Ends Here ------------------------>
+<!--------------------------- The Privacy Page Ends Here ------------------------>
+
+
+
+
+
+
+
+
+
+
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
@@ -1547,7 +1741,7 @@
           <li><a href="#">Newsroom</a></li>
           <li><a href="#">Investors</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="#contact" id="contact1" class="navigate">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -1596,7 +1790,7 @@
     <div class="footer-legal">
       <p>&copy; 2024 {{ app_name }} Technologies Inc.</p>
       <ul>
-        <li><a href="#">Privacy</a></li>
+        <li><a href="#privacy" id="privacy1" class="navigate">Privacy</a></li>
         <li><a href="#">Accessibility</a></li>
         <li><a href="#">Terms</a></li>
       </ul>
