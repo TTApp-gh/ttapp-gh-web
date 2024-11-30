@@ -1153,3 +1153,87 @@ a.text-decoration-none:hover {
 }
 /* Privacy Page Ends Here */
 
+
+/* Package Page Starts Here */
+.ttapp-package .card {
+  border-radius: 10px;
+}
+
+.ttapp-package .map-container {
+  min-height: 400px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ttapp-package h4 {
+  color: #333;
+}
+
+.ttapp-package .btn-group .btn {
+  border-radius: 5px;
+}
+
+.ttapp-package .form-select {
+  border-radius: 5px;
+}
+/* Package Page Ends Here */
+
+
+/* Terms And Conditions Page Starts Here */
+.ttapp-terms {
+  background-color: #f9f9f9;
+}
+
+.ttapp-terms h1 {
+  color: #333;
+}
+
+.ttapp-terms .accordion-button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.ttapp-terms .accordion-button:not(.collapsed) {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.ttapp-terms .accordion-body {
+  font-size: 0.95rem;
+  color: #555;
+}
+/* Terms And Conditions Page Ends Here */
+
+
+
+/* Third party Page Starts Here */
+.ttapp-third-party {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.ttapp-third-party h1, .ttapp-third-party h2 {
+  color: #000;
+}
+
+.ttapp-third-party a {
+  color: #007bff;
+}
+
+.ttapp-third-party a:hover {
+  text-decoration: underline;
+}
+
+.ttapp-third-party .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.ttapp-third-party .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+/* Third party Page Ends Here */
+

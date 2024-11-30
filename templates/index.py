@@ -96,7 +96,7 @@
                 <!-- Tab Content -->
                 <div class="tab-content mt-3" id="ridePackageTabContent">
                     <!-- Ride Tab Content -->
-                    <div class="tab-pane fade show active" id="ride" role="tabpanel" aria-labelledby="ride-tab">
+                    <div class="tab-pane show active" id="ride" role="tabpanel" aria-labelledby="ride-tab">
                         <form class="mt-3">
                             <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Pickup location">
@@ -153,7 +153,7 @@
                     <h4 class="card-title">Ride</h4>
                     <p class="card-text">Go anywhere with Uber. Request a ride, hop in, and go.</p>
                     <img src="{{ url_for('static', filename='images/car.PNG') }}" alt="Ride" class="img-fluid mb-3">
-                    <a href="#" class="btn btn-light border">Details</a>
+                    <a href="#riding" id="ride" class=" navigate btn btn-light border">Details</a>
                 </div>
             </div>
             <!-- Suggestion Card 2 -->
@@ -162,7 +162,7 @@
                     <h4 class="card-title">Package</h4>
                     <p class="card-text">{{ app_name }} Connect makes same-day delivery easier than ever.</p>
                     <img src="{{ url_for('static', filename='images/package.PNG') }}" alt="Package" class="img-fluid mb-3">
-                    <a href="#" class="btn btn-light border">Details</a>
+                    <a href="#packaging" id="package1" class="navigate btn btn-light border">Details</a>
                 </div>
             </div>
             <!-- Suggestion Card 3 -->
@@ -171,7 +171,7 @@
                     <h4 class="card-title">Reserve</h4>
                     <p class="card-text">Reserve your ride in advance so you can relax on the day of your trip.</p>
                     <img src="{{ url_for('static', filename='images/reserve.PNG') }}" alt="Reserve" class="img-fluid mb-3">
-                    <a href="#" class="btn btn-light border">Details</a>
+                    <a href="#riding" id="ride" class=" navigate btn btn-light border">Details</a>
                 </div>
             </div>
         </div>
@@ -830,6 +830,180 @@
 
 
 
+<!--------------------------- The Privacy Page Starts Here ------------------------>
+<!--------------------------- The Privacy Page Starts Here ------------------------>
+
+<section id="privacy0" class="section privacy2 ttapp-privacy py-5" title="privacy2">
+  <div class="container">
+    <!-- Privacy Center Heading -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Privacy Center</h2>
+      <p class="text-muted">Take control of your privacy and learn how we protect it.</p>
+    </div>
+
+    <!-- Section 1: Your Data and Privacy -->
+    <div class="mb-5">
+      <h4 class="fw-bold mb-4">Your data and privacy at {{ app_name }}</h4>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <img src="{{ url_for('static', filename='images/summary.PNG') }}" alt="Data Summary" class="card-img-top mb-3" style="height: 100px; object-fit: contain;">
+            <div class="card-body">
+              <p class="card-text">Would you like to see a summary of how you use {{ app_name }}?</p>
+              <a href="#" class="btn btn-outline-primary text-white bg-dark">See summary</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <img src="{{ url_for('static', filename='images/view.PNG') }}" alt="Data Shape" class="card-img-top mb-3" style="height: 100px; object-fit: contain;">
+            <div class="card-body">
+              <p class="card-text">How does your data shape your trip experience?</p>
+              <a href="#" class="btn btn-outline-primary text-white bg-dark">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <img src="{{ url_for('static', filename='images/request.PNG') }}" alt="Personal Data" class="card-img-top mb-3" style="height: 100px; object-fit: contain;">
+            <div class="card-body">
+              <p class="card-text">Would you like a copy of your personal data?</p>
+              <a href="#" class="btn btn-outline-primary text-white bg-dark">Request</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Ads and Data -->
+    <div class="mb-5">
+      <h4 class="fw-bold mb-4">Ads and Data</h4>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Offers and Promos from {{ app_name }}
+          <span class="text-muted">Control personalized offers and promos</span>
+          <a href="#" class="text-primary">></a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Data Tracking
+          <span class="text-muted">Control Data Tracking for Personalized Ads</span>
+          <a href="#" class="text-primary">></a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Ads on {{ app_name }} Eats
+          <span class="text-muted">Control personalized ads you see in Eats</span>
+          <a href="#" class="text-primary">></a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Ads on Rides
+          <span class="text-muted">Control personalized ads you see on Rides</span>
+          <a href="#" class="text-primary">></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Section 3: Account Security and Privacy Approach -->
+    <div class="mb-5">
+      <h4 class="fw-bold mb-4">Account Security</h4>
+      <div class="d-flex justify-content-between align-items-center">
+        <span>Account Deletion</span>
+        <a href="#" class="text-primary">></a>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <h4 class="fw-bold">How do we approach privacy at {{ app_name }}?</h4>
+      <div class="mt-4">
+        <a href="#" class="btn btn-outline-primary me-3 text-white bg-dark">Check out Privacy Overview Page</a>
+        <a href="#" class="btn btn-outline-primary text-white bg-dark">Submit a privacy inquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- The Privacy Page Ends Here ------------------------>
+<!--------------------------- The Privacy Page Ends Here ------------------------>
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------------- The Third Party Page Starts Here ------------------------>
+<!--------------------------- The Third Party Page Starts Here ------------------------>
+
+<section id="third_party" class="section third_party1 ttapp-third-party py-5" title="third_party1">
+  <div class="container">
+    <nav class="breadcrumb mb-4">
+      <a href="#" class="breadcrumb-item">Home</a>
+      <span class="breadcrumb-item active">Third Party Applications</span>
+    </nav>
+
+    <h1 class="fw-bold mb-4">Third Party Applications</h1>
+    <p>
+      You can connect third-party applications to your TTApp account to enable additional features. 
+      This most commonly happens when you:
+    </p>
+    <ul>
+      <li>Explore benefits and discounts provided by third parties</li>
+      <li>Sign in to other apps with your TTApp account</li>
+    </ul>
+
+    <p>
+      Third-party applications will request permission to access your TTApp account and data before enabling these features. 
+      Such applications do <strong>NOT</strong> include:
+    </p>
+    <ul>
+      <li>Social accounts used to sign in to TTApp (like Google or Facebook)</li>
+      <li>Government or regulatory entities</li>
+      <li>Advertisers</li>
+    </ul>
+
+    <h2 class="fw-bold mt-4">Removing Access</h2>
+    <p>
+      You can view and manage which third-party applications can access your data under 
+      <a href="#account" id="accounts" class="navigate text-black text-decoration-none">account management</a>.
+    </p>
+    <p>
+      If you remove access for a third-party application, they won’t be able to access your data, and you won’t have access to their services. However, they may still have data they previously accessed.
+    </p>
+    <p>
+      Please refer to the third party’s privacy notice for information regarding how and why they collect and use your information, and contact the third party if you have any questions. Each third party’s privacy notice can be found under 
+      <a href="#account" id="accounts" class=" navigate text-black text-decoration-none">account management</a>.
+    </p>
+    <p>
+      If you would like to use a third-party application whose access you removed in the future, you will be asked to provide access before using the app.
+    </p>
+
+    <div class="row mt-5">
+      <div class="col-md-6 text-center">
+        <p class="fw-bold">Can we help with this section?</p>
+        <button class="btn btn-outline-primary">Yes</button>
+        <button class="btn btn-outline-secondary">No</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- The Third Party Page Ends Here ------------------------>
+<!--------------------------- The Third Party Page Ends Here ------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--------- The Drive Page is Identified and starts here id=drive -------------->
 <!--------- The Drive Page is Identified and starts here id=drive -------------->
@@ -1082,6 +1256,67 @@
 
 
 
+
+
+
+
+
+<!--------------------------- The Package Page Starts Here ------------------------>
+<!--------------------------- The Package Page Starts Here ------------------------>
+
+<section id="packaging" class="section package1 ttapp-package py-5" title="package1">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Section: Details -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0">
+          <img src="{{ url_for('static', filename='images/package0.PNG') }}" alt="Package Delivery" class="card-img-top" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="fw-bold">TTApp Package</h4>
+            <p class="text-muted">Have a courier deliver something for you. Get packages delivered in the time it takes to drive there.</p>
+            <div class="btn-group mb-3" role="group">
+              <button type="button" class="btn btn-outline-primary bg-dark text-white active">Send</button>
+              <button type="button" class="btn btn-outline-primary bg-dark text-white">Receive</button>
+            </div>
+            <div class="mb-3">
+              <label for="pickup-location" class="form-label">Pickup location</label>
+              <select id="pickup-location" class="form-select">
+                <option selected>Select location</option>
+                <option value="1">Location 1</option>
+                <option value="2">Location 2</option>
+                <option value="3">Location 3</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-primary bg-dark text-white w-100" disabled>Search</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section: Map -->
+      <div class="col-md-8">
+        <div class="map-container h-100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14604.759530823495!2d3.4037482!3d6.4495088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1634144538164!5m2!1sen!2sng"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- The Package Page Ends Here ------------------------>
+<!--------------------------- The Package Page Ends Here ------------------------>
+
+
+
+
+
+
+
 <!--------- The TTApp Eat Page is Identified and starts here id=drive -------------->
 <!--------- The TTApp Eat Page is Identified and starts here id=drive -------------->
 
@@ -1138,10 +1373,23 @@
   </div>
 </section>
 
+<hr />
+<h2 class="section cities1">Cities</h2>
+<hr />
+<div id="cities" class="section eat cities1 map-container h-600" title="cities1">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14604.759530823495!2d3.4037482!3d6.4495088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1634144538164!5m2!1sen!2sng"
+    width="100%"
+    height="600px"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"></iframe>
+</div>
 
-<section class="section eat ttapp-locations">
+
+<section class="section eat cities1 ttapp-locations">
   <div class="cities-section">
-    <h2>Cities with TTApp</h2>
+    <h2>Cities with {{ app_name }}</h2>
     <div class="cities-list">
       <ul>
         <li>Akron</li>
@@ -1458,7 +1706,7 @@
     <div class="row align-items-center">
       <!-- Left Text Section -->
       <div class="col-md-6 px-5">
-        <h1 class="fw-bold mb-3">Contact {{ app_name }} in Nigeria</h1>
+        <h1 class="fw-bold mb-3">Contact {{ app_name }} in Ghana</h1>
         <p class="text-muted">
           Have questions about driving with {{ app_name }}? We're here for whatever you need.
         </p>
@@ -1621,100 +1869,126 @@
 
 
 
+<!------------------- The Terms And Conditions Page starts Here ---------------------->
+<!------------------- The Terms And Conditions Page starts Here ---------------------->
 
-<!--------------------------- The Privacy Page Starts Here ------------------------>
-<!--------------------------- The Privacy Page Starts Here ------------------------>
-
-<section id="privacy0" class="section privacy2 ttapp-privacy py-5" title="privacy2">
+<section id="terms" class="section terms1 ttapp-terms py-5" title="terms1">
   <div class="container">
-    <!-- Privacy Center Heading -->
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Privacy Center</h2>
-      <p class="text-muted">Take control of your privacy and learn how we protect it.</p>
-    </div>
+    <h1 class="text-center fw-bold mb-4">Terms and Conditions</h1>
+    <p class="text-center text-muted mb-5">
+      Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the {{ app_name }} platform.
+    </p>
 
-    <!-- Section 1: Your Data and Privacy -->
-    <div class="mb-5">
-      <h4 class="fw-bold mb-4">Your data and privacy at {{ app_name }}</h4>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 text-center p-3">
-            <img src="{{ url_for('static', filename='images/summary.PNG') }}" alt="Data Summary" class="card-img-top mb-3" style="height: 100px; object-fit: contain;">
-            <div class="card-body">
-              <p class="card-text">Would you like to see a summary of how you use {{ app_name }}?</p>
-              <a href="#" class="btn btn-outline-primary text-white bg-dark">See summary</a>
-            </div>
+    <div class="accordion" id="termsAccordion">
+      <!-- Section 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne">
+            1. Introduction
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            Welcome to {{ app_name }}! By accessing or using our app, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, please do not use {{ app_name }}.
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 text-center p-3">
-            <img src="{{ url_for('static', filename='images/view.PNG') }}" alt="Data Shape" class="card-img-top mb-3" style="height: 100px; object-fit: contain;">
-            <div class="card-body">
-              <p class="card-text">How does your data shape your trip experience?</p>
-              <a href="#" class="btn btn-outline-primary text-white bg-dark">View</a>
-            </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo">
+            2. Eligibility
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            To use {{ app_name }}, you must be at least 18 years old and legally capable of entering into binding agreements. By registering, you confirm that you meet these eligibility requirements.
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 text-center p-3">
-            <img src="{{ url_for('static', filename='images/request.PNG') }}" alt="Personal Data" class="card-img-top mb-3" style="height: 100px; object-fit: contain;">
-            <div class="card-body">
-              <p class="card-text">Would you like a copy of your personal data?</p>
-              <a href="#" class="btn btn-outline-primary text-white bg-dark">Request</a>
-            </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree">
+            3. User Responsibilities
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            Users are responsible for maintaining the confidentiality of their account information and ensuring all details provided are accurate. Any misuse of the {{ app_name }} platform may result in account suspension.
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour">
+            4. Payments and Refunds
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            Payments made through {{ app_name }} are non-refundable unless explicitly stated otherwise. By using the platform, you agree to the payment terms outlined during your transaction.
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFive"
+            aria-expanded="false"
+            aria-controls="collapseFive">
+            5. Limitation of Liability
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            {{ app_name }} is not liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use the platform. Users are encouraged to report any issues via the {{ app_name }} Help Center.
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Section 2: Ads and Data -->
-    <div class="mb-5">
-      <h4 class="fw-bold mb-4">Ads and Data</h4>
-      <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Offers and Promos from {{ app_name }}
-          <span class="text-muted">Control personalized offers and promos</span>
-          <a href="#" class="text-primary">></a>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Data Tracking
-          <span class="text-muted">Control Data Tracking for Personalized Ads</span>
-          <a href="#" class="text-primary">></a>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Ads on {{ app_name }} Eats
-          <span class="text-muted">Control personalized ads you see in Eats</span>
-          <a href="#" class="text-primary">></a>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Ads on Rides
-          <span class="text-muted">Control personalized ads you see on Rides</span>
-          <a href="#" class="text-primary">></a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Section 3: Account Security and Privacy Approach -->
-    <div class="mb-5">
-      <h4 class="fw-bold mb-4">Account Security</h4>
-      <div class="d-flex justify-content-between align-items-center">
-        <span>Account Deletion</span>
-        <a href="#" class="text-primary">></a>
-      </div>
-    </div>
-
-    <div class="text-center">
-      <h4 class="fw-bold">How do we approach privacy at TTApp?</h4>
-      <div class="mt-4">
-        <a href="#" class="btn btn-outline-primary me-3 text-white bg-dark">Check out Privacy Overview Page</a>
-        <a href="#" class="btn btn-outline-primary text-white bg-dark">Submit a privacy inquiry</a>
-      </div>
+    <div class="text-center mt-4">
+      <p class="text-muted">For further information, please contact <a href="mailto:support@ttapp.com" class="text-decoration-none">support@ttapp.com</a>.</p>
     </div>
   </div>
 </section>
 
-<!--------------------------- The Privacy Page Ends Here ------------------------>
-<!--------------------------- The Privacy Page Ends Here ------------------------>
+<!------------------- The Terms And Conditions Page Ends Here ---------------------->
+<!------------------- The Terms And Conditions Page Ends Here ---------------------->
 
 
 
@@ -1747,9 +2021,9 @@
       <div class="footer-column">
         <h4>Products</h4>
         <ul>
-          <li><a href="#">Ride</a></li>
-          <li><a href="#">Drive</a></li>
-          <li><a href="#">Deliver</a></li>
+          <li><a href="#riding" id="ride" class="navigate">Ride</a></li>
+          <li><a href="#driver" id="drive" class="navigate">Drive</a></li>
+          <li><a href="#packaging" id="package1" class="navigate">Deliver</a></li>
           <li><a href="#">{{ app_name }} Freight</a></li>
           <li><a href="#">Gift cards</a></li>
         </ul>
@@ -1765,18 +2039,18 @@
       <div class="footer-column">
         <h4>Travel</h4>
         <ul>
-          <li><a href="#">Reserve</a></li>
-          <li><a href="#">Cities</a></li>
+          <li><a href="#riding" id="ride" class="navigate">Reserve</a></li>
+          <li><a href="#cities" id="cities1" class="navigate">Cities</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="social-icons">
         <a href="https://www.facebook.com/profile.php?id=61566501765378&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com/thetrotroapp"><i class="fab fa-twitter"></i></a>
+        <a href="http://www.youtube.com/@TheTrotroApp"><i class="fab fa-youtube"></i></a>
         <a href="https://www.linkedin.com/company/ttapp/"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/thetrotroapp/"><i class="fab fa-instagram"></i></a>
       </div>
       <div class="app-store-links">
         <a href="#"><img src="{{ url_for('static', filename='images/playstore_1.png') }}" alt="Google Play"></a>
@@ -1792,7 +2066,7 @@
       <ul>
         <li><a href="#privacy" id="privacy1" class="navigate">Privacy</a></li>
         <li><a href="#">Accessibility</a></li>
-        <li><a href="#">Terms</a></li>
+        <li><a href="#terms" id="terms1" class="navigate">Terms</a></li>
       </ul>
     </div>
   </div>
