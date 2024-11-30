@@ -1276,7 +1276,7 @@
             <p class="text-muted">Have a courier deliver something for you. Get packages delivered in the time it takes to drive there.</p>
             <div class="btn-group mb-3" role="group">
               <button type="button" class="btn btn-outline-primary bg-dark text-white active">Send</button>
-              <button type="button" class="btn btn-outline-primary bg-dark text-white">Receive</button>
+              <button type="button" class="btn btn-outline-primary text-black">Receive</button>
             </div>
             <div class="mb-3">
               <label for="pickup-location" class="form-label">Pickup location</label>
