@@ -6,6 +6,7 @@
     <title>{{ title }}</title>
 	<link rel="icon" href="{{ url_for('static', filename='images/logo.jpeg') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -74,6 +75,7 @@
 
 <!-- Ride/Package Section -->
 <section id="riding" class="section home ride ride-package-section" title="ride">
+<br />
     <div class="container">
         <div class="row align-items-center">
             <!-- Left Side: Form -->
@@ -1373,9 +1375,9 @@
   </div>
 </section>
 
-<hr />
+<hr class="section eat cities1" />
 <h2 class="section cities1">Cities</h2>
-<hr />
+<hr class="section eat cities1" />
 <div id="cities" class="section eat cities1 map-container h-600" title="cities1">
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14604.759530823495!2d3.4037482!3d6.4495088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1634144538164!5m2!1sen!2sng"
@@ -1999,6 +2001,161 @@
 
 
 
+
+
+
+<!------------------- The Offering Page Starts Here ---------------------->
+<!------------------- The Offering Page Starts Here ---------------------->
+
+<section id="offering"  class="section offering1 ttapp-technology py-5" title="offering1">
+  <div class="container text-center">
+    <!-- Heading Section -->
+    <h1 class="fw-bold">{{ app_name }}'s Technology Offerings</h1>
+    <p class="mt-3">Changing how people can connect and move packages from point A to point B is just the beginning.</p>
+    <button class="btn btn-dark mt-3">Explore the App</button>
+  </div>
+
+  <!-- Description Section -->
+  <div class="container mt-5">
+    <h2 class="fw-bold text-center mb-4">{{ app_name }} Apps, Products, and Other Offerings</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          {{ app_name }} is a technology company whose mission is to reimagine the way the world moves for the better.
+          Our technology helps us develop and maintain multilateral platforms that match consumers looking for
+          reliable delivery services. These platforms integrate a variety of transportation methods, such as
+          couriers and personal drivers.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>
+          We also connect consumers and businesses, allowing them to send and receive packages conveniently.
+          {{ app_name }}'s platform ensures seamless logistics between independent providers and recipients. With our
+          global reach, {{ app_name }} supports movement in multiple cities and countries worldwide.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ride Options Section -->
+  <div class="container mt-5 text-center">
+    <h2 class="fw-bold">{{ app_name }}'s Most Popular Delivery Options</h2>
+    <p class="mt-3">Send or receive packages quickly and reliably.</p>
+    <div class="d-flex justify-content-center gap-4 mt-3">
+      <a href="#" class="btn btn-outline-black">Download the App</a>
+      <a href="#" class="btn btn-outline-secondary">See More Delivery Options</a>
+    </div>
+  </div>
+</section>
+
+<section class="section offering1 ttapp-services py-5">
+  <div class="container">
+    <!-- Delivery Options Section -->
+    <div class="row text-center mb-5">
+      <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/offer1.PNG') }}" alt="TTApp Regular Delivery" class="img-fluid mb-3">
+        <h4 class="fw-bold">{{ app_name }} Regular</h4>
+        <p>Affordable deliveries for your everyday needs.</p>
+        <a href="#" class="text-black">Learn more</a>
+      </div>
+      <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/offer2.PNG') }}" alt="TTApp Shared Delivery" class="img-fluid mb-3">
+        <h4 class="fw-bold">{{ app_name }} Shared</h4>
+        <p>Share delivery costs with nearby senders.</p>
+        <a href="#" class="text-black">Learn more</a>
+      </div>
+      <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/offer3.PNG') }}" alt="TTApp Premium Delivery" class="img-fluid mb-3">
+        <h4 class="fw-bold">{{ app_name }} Premium</h4>
+        <p>Exclusive deliveries with extra care and speed.</p>
+        <a href="#" class="text-black">Learn more</a>
+      </div>
+    </div>
+
+    <!-- Additional Features Section -->
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="d-flex align-items-center justify-content-center mb-2">
+          <i class="bi bi-shield-check fs-1 text-black"></i>
+        </div>
+        <h5 class="fw-bold">Safety</h5>
+        <p>Experience peace of mind with every delivery.</p>
+        <a href="#" class="text-black">Learn more about safety</a>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex align-items-center justify-content-center mb-2">
+          <i class="bi bi-geo-alt fs-1 text-black"></i>
+        </div>
+        <h5 class="fw-bold">Coverage</h5>
+        <p>Available in 10,000+ locations worldwide.</p>
+        <a href="#" class="text-black">Find a location</a>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex align-items-center justify-content-center mb-2">
+          <i class="bi bi-airplane fs-1 text-black"></i>
+        </div>
+        <h5 class="fw-bold">Airports</h5>
+        <p>Quick package transfers to and from 600+ airports.</p>
+        <a href="#" class="text-black">See all airports</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section offering1 ttapp-offers py-5">
+  <div class="container">
+    <!-- Food Delivery Section -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="fw-bold mb-4">Food Delivery on Demand</h2>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="{{ url_for('static', filename='images/offer4.PNG') }}" class="img-fluid rounded" alt="TTApp Food Delivery">
+        <h5 class="mt-3 fw-bold">{{ app_name }} Eats</h5>
+        <p>Order from your favorite restaurants, online or via the {{ app_name }}. Restaurants will prepare your order, and a nearby delivery person will bring it to your door.</p>
+        <a href="#eating" id="eat" class="navigate text-black">Visit {{ app_name }} Eats</a>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="{{ url_for('static', filename='images/offer5.PNG') }}" class="img-fluid rounded" alt="Partner with TTApp">
+        <h5 class="mt-3 fw-bold">Restaurants</h5>
+        <p>Expand your restaurant business by featuring your menu on {{ app_name }} Eats. Delight customers and grow your reach with fast and reliable food delivery.</p>
+        <a href="#eating" id="eat" class="navigate text-black">Partner with {{ app_name }} Eats</a>
+      </div>
+    </div>
+
+    <!-- Earning Opportunities Section -->
+    <div class="row">
+      <div class="col-12">
+        <h2 class="fw-bold mb-4">Earn Money with {{ app_name }}</h2>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="{{ url_for('static', filename='images/offer6.PNG') }}" class="img-fluid rounded" alt="Drive with TTApp">
+        <h5 class="mt-3 fw-bold">Drive with {{ app_name }}</h5>
+        <p>Make the most of your time on the road by driving with {{ app_name }}. Join our network of active drivers and earn while exploring your city.</p>
+        <a href="#signingup" id="signup" class="navigate text-black">Sign up to drive</a>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="{{ url_for('static', filename='images/offer7.PNG') }}" class="img-fluid rounded" alt="Deliver with TTApp">
+        <h5 class="mt-3 fw-bold">Deliver with {{ app_name }}</h5>
+        <p>Earn money delivering food orders, packages, and more with {{ app_name }}. Enjoy flexible hours and the freedom to choose your schedule.</p>
+        <a href="#signingup" id="signup" class="navigate text-black">Sign up to deliver</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------------- The Offering Page Ends Here ---------------------->
+<!------------------- The Offering Page Ends Here ---------------------->
+
+
+
+
+
+
+
+
+
+
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
@@ -2011,7 +2168,7 @@
         <h4>Company</h4>
         <ul>
           <li><a href="#about_us" id="about" class="navigate">About us</a></li>
-          <li><a href="#">Our offerings</a></li>
+          <li><a href="#offering" id="offering1" class="navigate">Our offerings</a></li>
           <li><a href="#">Newsroom</a></li>
           <li><a href="#">Investors</a></li>
           <li><a href="#">Blog</a></li>

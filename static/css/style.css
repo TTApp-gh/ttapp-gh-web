@@ -1237,3 +1237,104 @@ a.text-decoration-none:hover {
 }
 /* Third party Page Ends Here */
 
+
+
+/* Offering Page Starts Here */
+.ttapp-technology {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.ttapp-technology h1,
+.ttapp-technology h2 {
+  color: #000;
+}
+
+.ttapp-technology p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ttapp-technology .btn-dark {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.ttapp-technology .btn-dark:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.ttapp-technology .btn-outline-primary,
+.ttapp-technology .btn-outline-secondary {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.ttapp-technology .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.ttapp-technology .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.ttapp-services {
+  background-color: #f9f9f9;
+}
+
+.ttapp-services h4,
+.ttapp-services h5 {
+  color: #333;
+}
+
+.ttapp-services p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.ttapp-services a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ttapp-services a:hover {
+  text-decoration: underline;
+}
+
+.ttapp-services .bi {
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+.ttapp-offers {
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.ttapp-offers h2 {
+  color: #333; /* Darker heading color */
+}
+
+.ttapp-offers p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.ttapp-offers a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ttapp-offers a:hover {
+  text-decoration: underline;
+}
+
+.ttapp-offers img {
+  max-height: 300px;
+  object-fit: cover;
+}
+/* Offering Page Ends Here */
+
