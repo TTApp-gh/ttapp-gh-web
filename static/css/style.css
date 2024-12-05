@@ -1336,5 +1336,86 @@ a.text-decoration-none:hover {
   max-height: 300px;
   object-fit: cover;
 }
+
+.ttapp-initiatives {
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.ttapp-initiatives h2 {
+  color: #333; /* Darker heading color */
+}
+
+.ttapp-initiatives p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.ttapp-initiatives a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ttapp-initiatives a:hover {
+  text-decoration: underline;
+}
+
+.ttapp-initiatives img {
+  max-height: 300px;
+  object-fit: cover;
+}
 /* Offering Page Ends Here */
+
+
+
+/* Safety Page Starts Here */
+.ttapp-safety {
+  background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+.ttapp-safety h2 {
+  color: #333; /* Darker heading for clarity */
+}
+
+.ttapp-safety p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.ttapp-safety img {
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.ttapp-safety h5 {
+  color: #444;
+}
+
+.ttapp-safety h5:hover {
+  color: #007bff; /* Add subtle hover effect */
+}
+
+.ttapp-safety-journeys h2 {
+  color: #333;
+}
+
+.ttapp-safety-journeys .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ttapp-safety-journeys .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ttapp-safety-journeys .bg-primary {
+  background-color: #007bff !important;
+}
+
+.ttapp-safety-journeys .blockquote-footer {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+/* Safety Page Ends Here */
 

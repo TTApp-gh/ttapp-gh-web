@@ -2080,7 +2080,7 @@
         </div>
         <h5 class="fw-bold">Safety</h5>
         <p>Experience peace of mind with every delivery.</p>
-        <a href="#" class="text-black">Learn more about safety</a>
+        <a href="#safety" id="safety1" class="navigate text-black">Learn more about safety</a>
       </div>
       <div class="col-md-4">
         <div class="d-flex align-items-center justify-content-center mb-2">
@@ -2144,8 +2144,170 @@
   </div>
 </section>
 
+<section class="section offering1 ttapp-initiatives py-5">
+  <div class="container">
+    <!-- Moving Cities Forward Section -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="fw-bold mb-4">Moving Cities Forward, Together</h2>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="{{ url_for('static', filename='images/offer8.PNG') }}" class="img-fluid rounded" alt="Public Transportation">
+        <h5 class="mt-3 fw-bold">Helping to improve public transportation for all</h5>
+        <p>{{ app_name }} is committed to helping cities around the world make public transportation more accessible, equitable, and efficient.</p>
+        <a href="#" class="text-black">Learn more about {{ app_name }} Transit</a>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="{{ url_for('static', filename='images/offer9.PNG') }}" class="img-fluid rounded" alt="Healthcare Access">
+        <h5 class="mt-3 fw-bold">Providing access to care for those in need</h5>
+        <p>We partner with healthcare organizations to provide their members and patients access to care by offering flexible ride-scheduling options.</p>
+        <a href="#" class="text-black">Visit {{ app_name }} Health</a>
+      </div>
+    </div>
+
+    <!-- Helping Businesses Move Ahead Section -->
+    <div class="row">
+      <div class="col-12">
+        <h2 class="fw-bold mb-4">Helping Businesses Move Ahead</h2>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="{{ url_for('static', filename='images/offer10.PNG') }}" class="img-fluid rounded" alt="TTApp Freight">
+        <h5 class="mt-3 fw-bold">{{ app_name }} Freight</h5>
+        <p>{{ app_name }} Freight is a platform that matches carriers with shippers. Instantly book loads, with upfront pricing ensuring carriers always know how much they’ll earn.</p>
+        <a href="#" class="text-black">Learn more about {{ app_name }} Freight</a>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="{{ url_for('static', filename='images/offer11.PNG') }}" class="img-fluid rounded" alt="TTApp for Business">
+        <h5 class="mt-3 fw-bold">{{ app_name }} for Business</h5>
+        <p>Whether it's employee travel or customer rides, {{ app_name }} for Business offers easy solutions for managing ground transportation with automated billing and reporting.</p>
+        <a href="#business" id="biz" class="navigate text-black">Learn more about {{ app_name }} for Business</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!------------------- The Offering Page Ends Here ---------------------->
 <!------------------- The Offering Page Ends Here ---------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------- The safety Page Starts Here ---------------------->
+<!------------------- The safety Page Starts Here ---------------------->
+
+<section id="safety" class="section safety1 ttapp-safety py-5" title="safety1">
+  <div class="container">
+    <!-- Commitment to Safety -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2 class="fw-bold">Our Commitment to Safety</h2>
+        <p>
+          We want you to move freely, make the most of your time, and stay connected to the people and places that matter most to you. 
+          That's why we are committed to safety—from the creation of new standards to the development of technology with the aim of reducing incidents.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="{{ url_for('static', filename='images/safe1.PNG') }}" class="img-fluid rounded" alt="Commitment to Safety">
+      </div>
+    </div>
+
+    <!-- Safety Features -->
+    <div class="row text-center">
+      <div class="col-12">
+        <h2 class="fw-bold mb-4">How Safety is Built into Your Experience</h2>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Safety Features in the App</h5>
+        <p>
+          Share your trip details with loved ones. Track your trip during your ride. Our technology helps put peace of mind at your fingertips.
+        </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">An Inclusive Community</h5>
+        <p>
+          Millions of riders and drivers share a set of Community Guidelines, holding each other accountable to do the right thing.
+        </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Support at Every Turn</h5>
+        <p>
+          A specially trained team is available 24/7. Reach them in the app, day or night, with any questions or safety concerns.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section safety1 ttapp-safety-journeys py-5">
+  <div class="container">
+    <!-- Title -->
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="fw-bold">Building Safer Journeys for Everyone</h2>
+      </div>
+    </div>
+
+    <!-- Driver and Rider Safety -->
+    <div class="row">
+      <!-- Driver Safety -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="{{ url_for('static', filename='images/safe2.PNG') }}" class="card-img-top rounded" alt="Driver Safety">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Driver Safety</h5>
+            <p class="card-text">
+              Count on 24/7 support to help with any questions or safety concerns. Share your trip with loved ones. Our focus is on your safety, so you can go where the opportunity is.
+            </p>
+            <a href="#" class="btn btn-link text-black">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rider Safety -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="{{ url_for('static', filename='images/safe3.PNG') }}" class="card-img-top rounded" alt="Rider Safety">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Rider Safety</h5>
+            <p class="card-text">
+              Millions of rides are requested every day. Every rider has access to safety features built into the app. And every ride has a support team if you need them.
+            </p>
+            <a href="#" class="btn btn-link text-black">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote Section -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="bg-primary text-white p-4 rounded text-center">
+          <blockquote class="blockquote">
+            <p class="mb-0">
+              “Every day, our technology puts millions of people together in cars in cities around the world. Helping keep people safe is a huge responsibility and one we do not take lightly.”
+            </p>
+            <br />
+            <div class="blockquote-footer text-white">
+              Mike Opare, {{ app_name }} CEO
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------------- The safety Page Ends Here ---------------------->
+<!------------------- The safety Page Ends Here ---------------------->
 
 
 
@@ -2188,7 +2350,7 @@
       <div class="footer-column">
         <h4>Global Citizenship</h4>
         <ul>
-          <li><a href="#">Safety</a></li>
+          <li><a href="#safety" id="safety1" class="navigate">Safety</a></li>
           <li><a href="#">Diversity and Inclusion</a></li>
           <li><a href="#">Sustainability</a></li>
         </ul>
