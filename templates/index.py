@@ -2306,9 +2306,228 @@
   </div>
 </section>
 
+<section class="section safety1 ttapp-partnering-difference py-5">
+  <div class="container">
+    <!-- Top Section: Image and Text -->
+    <div class="row align-items-center mb-5">
+      <!-- Image -->
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/safe4.PNG') }}" class="img-fluid rounded shadow-sm" alt="Partnering to Make a Difference">
+      </div>
+      <!-- Text -->
+      <div class="col-md-6">
+        <h2 class="fw-bold">Partnering to Make a Difference</h2>
+        <p>
+          Our commitment to safety goes beyond your ride. We have teamed up with leading experts—from public safety officials to anti-violence organizations—to help make roads and cities safer for all.
+        </p>
+        <a href="#" class="btn btn-link text-black">Learn more</a>
+      </div>
+    </div>
+
+    <!-- Bottom Section: Driver and Rider Safety -->
+    <div class="row text-center">
+      <!-- Driver Safety -->
+      <div class="col-md-6 mb-4">
+        <div class="p-3">
+          <div class="icon mb-3">
+            <i class="fas fa-car-side fa-3x text-black"></i>
+          </div>
+          <h5 class="fw-bold">Driver Safety</h5>
+          <p>Drive when and where you want with confidence.</p>
+          <a href="#" class="btn btn-link text-black">Learn more</a>
+        </div>
+      </div>
+      <!-- Rider Safety -->
+      <div class="col-md-6 mb-4">
+        <div class="p-3">
+          <div class="icon mb-3">
+            <i class="fas fa-user-shield fa-3x text-black"></i>
+          </div>
+          <h5 class="fw-bold">Rider Safety</h5>
+          <p>Go anytime and get there comfortably.</p>
+          <a href="#" class="btn btn-link text-black">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <small class="text-muted">
+          *Certain requirements and features vary by region and may be unavailable.
+        </small>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!------------------- The safety Page Ends Here ---------------------->
 <!------------------- The safety Page Ends Here ---------------------->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------- The Newsroom Page Starts Here ---------------------->
+<!------------------- The Newsroom Page Starts Here ---------------------->
+
+<section id="news" class="section news1 ttapp-newsroom" title="news1">
+  <!-- Header -->
+  <div class="news-header text-center text-white py-5">
+    <h1 class="fw-bold">{{ app_name }} Newsroom</h1>
+    <p class="lead">The latest updates are arriving now</p>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image Section -->
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/news0.PNG') }}" class="img-fluid rounded shadow-sm" alt="TTApp News">
+      </div>
+      <!-- Text Section -->
+      <div class="col-md-6">
+        <h5 class="text-muted">Global / Dec 5</h5>
+        <h2>‘Tis the season for {{ app_name }} everything</h2>
+        <p>We’re bringing the magic directly to your doorstep this holiday season.</p>
+        <a href="#packaging" id="package1" class="navigate btn btn-link text-white fw-bold">Read more &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section news1 ttapp-recent-news py-5">
+  <div class="container">
+    <!-- Recent News Heading -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-bold">Recent News</h2>
+      <a href="#" class="text-black fw-semibold">See all &rarr;</a>
+    </div>
+
+    <!-- News List -->
+    <div class="row">
+      <div class="col-lg-8">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="#" class="text-decoration-none text-dark">New features to make holiday travel more effortless</a>
+            <span class="text-muted">Nov 20</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="#" class="text-decoration-none text-dark">The 2024 {{ app_name }} Cravings Report</a>
+            <span class="text-muted">Nov 14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="#" class="text-decoration-none text-dark">The results are in: Car-light living is possible – and it may surprise you</a>
+            <span class="text-muted">Oct 29</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="#" class="text-decoration-none text-dark">Get Listed: A new way to share—and find—favorites on {{ app_name }}</a>
+            <span class="text-muted">Oct 16</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="#" class="text-decoration-none text-dark">Your Business Black ride is arriving now: An elevated ride for top-tier business travel</a>
+            <span class="text-muted">Oct 15</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Information Boxes -->
+      <div class="col-lg-4">
+        <div class="info-box p-3 mb-3 bg-light border rounded">
+          <h5 class="fw-bold">Leadership &rarr;</h5>
+          <p class="text-muted">Learn more about our best-in-class team.</p>
+        </div>
+        <div class="info-box p-3 mb-3 bg-light border rounded">
+          <h5 class="fw-bold">Company Info &rarr;</h5>
+          <p class="text-muted">Learn more about our history and key milestones.</p>
+        </div>
+        <div class="info-box p-3 bg-light border rounded">
+          <h5 class="fw-bold">Media Assets &rarr;</h5>
+          <p class="text-muted">Official {{ app_name }} photos, logos, and assets available for download.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------------- The Newsroom Page Ends Here ---------------------->
+<!------------------- The Newsroom Page Ends Here ---------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------- The Blog Page Starts Here ---------------------->
+<!------------------- The Blog Page Starts Here ---------------------->
+
+<section id="blog" class="section blog1 ttapp-move-nigeria py-5" title="blog1">
+  <div class="container">
+    <!-- Heading Section -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">On the move in Ghana</h1>
+      <p class="fs-4">Things to do and ways to get there</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="row">
+      <!-- Featured Article -->
+      <div class="col-lg-6 mb-4">
+        <div class="position-relative">
+          <img src="{{ url_for('static', filename='images/robot.PNG') }}" class="img-fluid rounded" alt="Featured Article">
+          <div class="position-absolute top-50 translate-middle-y start-0 p-3 bg-white shadow rounded">
+            <h5 class="fw-bold">Introducing the Prompt Engineering Toolkit</h5>
+            <p class="text-muted mb-2">
+              LLM iteration can happen with speed and safety! Explore how {{ app_name }} launched a prompt toolkit for engineers to create, manage, and evaluate prompts with dynamic contextualization, batch generation, and robust safety checks.
+            </p>
+            <p class="text-muted"><small>26 November / Global</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Articles -->
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <!-- Article 1 -->
+          <div class="col-6">
+            <img src="{{ url_for('static', filename='images/city.PNG') }}" class="img-fluid rounded shadow-sm" alt="City Scene">
+          </div>
+          <!-- Article 2 -->
+          <div class="col-6">
+            <img src="{{ url_for('static', filename='images/cart.PNG') }}" class="img-fluid rounded shadow-sm" alt="Uber Cart">
+          </div>
+          <!-- Article 3 -->
+          <div class="col-6">
+            <img src="{{ url_for('static', filename='images/traffic.PNG') }}" class="img-fluid rounded shadow-sm" alt="Traffic">
+          </div>
+          <!-- Article 4 -->
+          <div class="col-6">
+            <img src="{{ url_for('static', filename='images/city.PNG') }}" class="img-fluid rounded shadow-sm" alt="Street Scene">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------------- The Blog Page Ends Here ---------------------->
+<!------------------- The Blog Page Ends Here ---------------------->
 
 
 
@@ -2331,9 +2550,9 @@
         <ul>
           <li><a href="#about_us" id="about" class="navigate">About us</a></li>
           <li><a href="#offering" id="offering1" class="navigate">Our offerings</a></li>
-          <li><a href="#">Newsroom</a></li>
+          <li><a href="#news" id="news1" class="navigate">Newsroom</a></li>
           <li><a href="#">Investors</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#blog" id="blog1" class="navigate">Blog</a></li>
           <li><a href="#contact" id="contact1" class="navigate">Contact Us</a></li>
         </ul>
       </div>

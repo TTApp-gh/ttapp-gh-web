@@ -1417,5 +1417,143 @@ a.text-decoration-none:hover {
   font-size: 0.9rem;
   font-style: italic;
 }
+
+.ttapp-partnering-difference h2 {
+  color: #333;
+}
+
+.ttapp-partnering-difference .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ttapp-partnering-difference .icon i {
+  color: #007bff;
+}
+
+.ttapp-partnering-difference img {
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ttapp-partnering-difference .btn-link {
+  text-decoration: none;
+}
+
+.ttapp-partnering-difference small {
+  font-size: 0.85rem;
+}
 /* Safety Page Ends Here */
+
+
+
+/* Newsroom Page Starts Here */
+.ttapp-newsroom {
+  background-color: #000; /* Black background */
+}
+
+.news-header {
+  background-color: #000;
+  color: white;
+}
+
+.news-header h1 {
+  font-size: 2.5rem;
+}
+
+.news-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.ttapp-newsroom img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ttapp-newsroom h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+.ttapp-newsroom p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.ttapp-newsroom a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.ttapp-newsroom a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.ttapp-recent-news {
+  background-color: #f9f9f9;
+}
+
+.ttapp-recent-news h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.ttapp-recent-news .list-group-item {
+  border: none;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.ttapp-recent-news .list-group-item:last-child {
+  border-bottom: none;
+}
+
+.ttapp-recent-news .list-group-item a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ttapp-recent-news .info-box {
+  transition: box-shadow 0.3s ease;
+}
+
+.ttapp-recent-news .info-box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Newsroom Page Ends Here */
+
+
+
+/* Blog Page Starts Here */
+.ttapp-move-nigeria h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.ttapp-move-nigeria p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.ttapp-move-nigeria .position-relative img {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.ttapp-move-nigeria .shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ttapp-move-nigeria .position-absolute {
+  width: 90%;
+}
+
+.ttapp-move-nigeria .row .img-fluid {
+  height: 150px;
+  object-fit: cover;
+}
+/* Blog Page Ends Here */
 
