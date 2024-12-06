@@ -2518,7 +2518,7 @@
           </div>
           <!-- Article 4 -->
           <div class="col-6">
-            <img src="{{ url_for('static', filename='images/city.PNG') }}" class="img-fluid rounded shadow-sm" alt="Street Scene">
+            <img src="{{ url_for('static', filename='images/c.PNG') }}" class="img-fluid rounded shadow-sm" alt="Street Scene">
           </div>
         </div>
       </div>
