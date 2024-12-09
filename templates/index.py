@@ -2518,8 +2518,138 @@
           </div>
           <!-- Article 4 -->
           <div class="col-6">
-            <img src="{{ url_for('static', filename='images/c.PNG') }}" class="img-fluid rounded shadow-sm" alt="Street Scene">
+            <img src="{{ url_for('static', filename='images/city.PNG') }}" class="img-fluid rounded shadow-sm" alt="Street Scene">
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section blog1 ttapp-articles py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Main Articles Section -->
+      <div class="col-lg-9">
+        <div class="row g-4">
+          <!-- Article 1 -->
+          <div class="col-md-4">
+            <div class="card border-0 h-100">
+              <div class="card-body bg-dark text-white d-flex flex-column">
+                <h5 class="card-title fw-bold">Get a ride when you need one</h5>
+                <p class="card-text mt-auto">
+                  <a href="#signingup" id="signup" class="navigate text-white">Sign up to ride</a> <br />
+                  <a href="#business" id="biz" class="navigate text-white">Start earning in your city</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Article 2 -->
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img
+                src="{{ url_for('static', filename='images/blog_img.PNG') }}"
+                class="card-img-top"
+                alt="Article Image"
+                style="height: 180px; object-fit: cover;"
+              />
+              <div class="card-body">
+                <h6 class="text-muted">Engineering, Data / ML</h6>
+                <h5 class="card-title fw-bold">
+                  Enabling Infinite Retention for Upsert Tables in Apache Pinot
+                </h5>
+                <p class="text-muted">31 October / Global</p>
+              </div>
+            </div>
+          </div>
+          <!-- Article 3 -->
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img
+                src="{{ url_for('static', filename='images/blog_img.PNG') }}"
+                class="card-img-top"
+                alt="Article Image"
+                style="height: 180px; object-fit: cover;"
+              />
+              <div class="card-body">
+                <h6 class="text-muted">Transit</h6>
+                <h5 class="card-title fw-bold">
+                  Uber, Unplugged: Insights from 6 Transit Leaders on the Future
+                  of How We Move
+                </h5>
+                <p class="text-muted">28 October / Global</p>
+              </div>
+            </div>
+          </div>
+          <!-- More Articles -->
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img
+                src="{{ url_for('static', filename='images/blog_img.PNG') }}"
+                class="card-img-top"
+                alt="Article Image"
+                style="height: 180px; object-fit: cover;"
+              />
+              <div class="card-body">
+                <h6 class="text-muted">Engineering, Backend</h6>
+                <h5 class="card-title fw-bold">
+                  Streamlining Financial Precision: {{ app_name }}'s Advanced Settlement
+                  Accounting System
+                </h5>
+                <p class="text-muted">24 October / Global</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img
+                src="{{ url_for('static', filename='images/blog_img.PNG') }}"
+                class="card-img-top"
+                alt="Article Image"
+                style="height: 180px; object-fit: cover;"
+              />
+              <div class="card-body">
+                <h6 class="text-muted">Transit</h6>
+                <h5 class="card-title fw-bold">
+                  Horacio’s Story: Gaining Mobility Independence Through
+                  Innovative Transportation Solutions
+                </h5>
+                <p class="text-muted">21 October / Global</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Most Popular Sidebar -->
+      <div class="col-lg-3">
+        <div class="sticky-top" style="top: 70px;">
+          <h5 class="fw-bold mb-4">Most Popular</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <h6 class="text-muted mb-1">
+                Engineering, Backend, Mobile / 14 November / Global
+              </h6>
+              <a href="#" class="fw-bold text-dark">
+                Unified Checkout: Streamlining {{ app_name }}’s Payment Ecosystem
+              </a>
+            </li>
+            <li class="mb-3">
+              <h6 class="text-muted mb-1">Data / ML / 10 September / Global</h6>
+              <a href="#" class="fw-bold text-dark">
+                DataMesh: How {{ app_name }} Laid the Foundations for the Data Lake Cloud
+                Migration
+              </a>
+            </li>
+            <li class="mb-3">
+              <h6 class="text-muted mb-1">Engineering, Backend / 12 November / Global</h6>
+              <a href="#" class="fw-bold text-dark">
+                The Accountant: Scaling Operational Throughput on {{ app_name }}’s
+                Stateful Platform
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -2528,6 +2658,200 @@
 
 <!------------------- The Blog Page Ends Here ---------------------->
 <!------------------- The Blog Page Ends Here ---------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------- The Investors Page Starts Here ---------------------->
+<!------------------- The Investors Page Starts Here ---------------------->
+
+<!-- Hero Section -->
+<section id="investor" class="section investor1 inv-hero-section hero-section"title="investor1">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="{{ url_for('static', filename='images/investor0.PNG') }}" class="d-block w-100" alt="Hero Image" style="height: 500px; object-fit: cover;">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="display-3 fw-bold text-white">161 million</h1>
+          <p class="lead text-white">monthly active platform consumers*</p>
+          <p class="text-white small">(*For the quarter ended September 30, 2024)</p>
+        </div>
+      </div>
+      
+      <!-- Slide 2 -->
+      <div class="carousel-item active">
+        <img src="{{ url_for('static', filename='images/logo.jpeg') }}" class="d-block w-100" alt="Hero Image" style="height: 500px; object-fit: cover;">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="display-3 fw-bold text-white">161 million</h1>
+          <p class="lead text-white">monthly active platform consumers*</p>
+          <p class="text-white small">(*For the quarter ended September 30, 2024)</p>
+        </div>
+      </div>
+      
+      <!-- Slide 3 -->
+      <div class="carousel-item active">
+        <img src="{{ url_for('static', filename='images/CEO.jpg') }}" class="d-block w-100" alt="Hero Image" style="height: 500px; object-fit: cover;">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="display-3 fw-bold text-white">161 million</h1>
+          <p class="lead text-white">monthly active platform consumers*</p>
+          <p class="text-white small">(*For the quarter ended September 30, 2024)</p>
+        </div>
+      </div>
+      <!-- Add more slides if needed -->
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- Mission Section -->
+<section class="section investor1 mission-section py-5">
+  <div class="container text-center">
+    <h5 class="text-uppercase text-muted mb-2">Our mission</h5>
+    <h2 class="display-4 fw-bold">We reimagine the way the world moves for the better</h2>
+    <p class="mt-3">
+      <a href="#" class="text-black fw-bold">A letter from our CEO, Mike Opare &rarr;</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- Corporate Responsibility Section -->
+<section class="section investor1 corporate-responsibility-section py-5">
+  <div class="container">
+    <!-- Heading -->
+    <div class="text-center mb-4">
+      <h1 class="fw-bold">Corporate responsibility</h1>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs justify-content-center mb-4" id="responsibilityTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="esg-tab" data-bs-toggle="tab" data-bs-target="#esg" type="button" role="tab" aria-controls="esg" aria-selected="true">ESG</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="safety-tab" data-bs-toggle="tab" data-bs-target="#safety" type="button" role="tab" aria-controls="safety" aria-selected="false">Safety</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="privacy-tab" data-bs-toggle="tab" data-bs-target="#privacy" type="button" role="tab" aria-controls="privacy" aria-selected="false">Privacy</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="diversity-tab" data-bs-toggle="tab" data-bs-target="#diversity" type="button" role="tab" aria-controls="diversity" aria-selected="false">Diversity and inclusion</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="global-tab" data-bs-toggle="tab" data-bs-target="#global" type="button" role="tab" aria-controls="global" aria-selected="false">Global citizenship</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="accessibility-tab" data-bs-toggle="tab" data-bs-target="#accessibility" type="button" role="tab" aria-controls="accessibility" aria-selected="false">Accessibility</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- ESG Tab -->
+      <div class="tab-pane fade show active" id="esg" role="tabpanel" aria-labelledby="esg-tab">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">ESG Report</h2>
+            <p>
+              At {{ app_name }}, we believe that sustainability is integral to the success of our business. Our environmental, social, and governance (ESG) reporting outlines the many ways in which {{ app_name }} builds value and, through its core business and social impact activities, helps to make the world a better place. 
+            </p>
+            <p>
+              Most importantly, it demonstrates how we are turning our commitments into action.
+            </p>
+            <a href="#" class="text-black fw-bold">View our 2024 ESG Report &rarr;</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="{{ url_for('static', filename='images/investor00.PNG') }}" class="img-fluid rounded" alt="ESG Image">
+          </div>
+        </div>
+      </div>
+      <!-- Add more tab-pane content for other tabs if necessary -->
+    </div>
+  </div>
+</section>
+
+<!-- Latest News and Events Section -->
+<section class="section investor1 latest-news-section py-5">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">The latest news and events</h2>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs justify-content-center mb-4" id="newsTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button" role="tab" aria-controls="news" aria-selected="true">News</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="false">Events and presentations</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- News Tab -->
+      <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
+        <ul class="list-group list-group-flush">
+          <!-- News Item 1 -->
+          <li class="list-group-item">
+            <small class="text-muted">December 6, 2024</small>
+            <h5 class="mt-2">{{ app_name }} and WeRide Launch Autonomous Mobility Service in Abu Dhabi</h5>
+            <a href="#" class="text-dark">Read more &rarr;</a>
+          </li>
+          <!-- News Item 2 -->
+          <li class="list-group-item">
+            <small class="text-muted">November 26, 2024</small>
+            <h5 class="mt-2">{{ app_name }} CFO to Participate in Fireside Chat Hosted by Barclays</h5>
+            <a href="#" class="text-dark">Read more &rarr;</a>
+          </li>
+          <!-- News Item 3 -->
+          <li class="list-group-item">
+            <small class="text-muted">October 31, 2024</small>
+            <h5 class="mt-2">{{ app_name }} Announces Results for Third Quarter 2024</h5>
+            <a href="#" class="text-dark">Read more &rarr;</a>
+          </li>
+          <!-- News Item 4 -->
+          <li class="list-group-item">
+            <small class="text-muted">October 7, 2024</small>
+            <h5 class="mt-2">{{ app_name }} Announces Date of Third Quarter 2024 Results Conference Call</h5>
+            <a href="#" class="text-dark">Read more &rarr;</a>
+          </li>
+        </ul>
+        <!-- View All Button -->
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-dark">View all &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Events Tab -->
+      <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+        <p class="text-center">No events available at the moment. Stay tuned!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!------------------- The Investors Page Ends Here ---------------------->
+<!------------------- The Investors Page Ends Here ---------------------->
 
 
 
@@ -2551,7 +2875,7 @@
           <li><a href="#about_us" id="about" class="navigate">About us</a></li>
           <li><a href="#offering" id="offering1" class="navigate">Our offerings</a></li>
           <li><a href="#news" id="news1" class="navigate">Newsroom</a></li>
-          <li><a href="#">Investors</a></li>
+          <li><a href="#investor" id="investor1" class="navigate">Investors</a></li>
           <li><a href="#blog" id="blog1" class="navigate">Blog</a></li>
           <li><a href="#contact" id="contact1" class="navigate">Contact Us</a></li>
         </ul>

@@ -1558,5 +1558,81 @@ a.text-decoration-none:hover {
 .ttapp-move-nigeria .row img:hover {
   transform: scale(1.05);
 }
+
+.ttapp-articles .card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ttapp-articles .card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ttapp-articles h5 {
+  font-size: 1.25rem;
+}
+
+.ttapp-articles ul li a:hover {
+  text-decoration: underline;
+}
 /* Blog Page Ends Here */
+
+
+
+/* Investors Page Starts Here */
+.inv-hero-section .carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mission-section h2 {
+  line-height: 1.5;
+}
+
+.mission-section a:hover {
+  text-decoration: underline;
+}
+
+.corporate-responsibility-section .nav-tabs .nav-link.active {
+  border-color: #0d6efd;
+  font-weight: bold;
+}
+
+.corporate-responsibility-section h1 {
+  font-size: 2.5rem;
+  color: #212529;
+}
+
+.corporate-responsibility-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.corporate-responsibility-section img {
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.latest-news-section .list-group-item {
+  border: none;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.latest-news-section .list-group-item:last-child {
+  border-bottom: none;
+}
+
+.latest-news-section h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.latest-news-section .btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  font-weight: bold;
+}
+/* Investors Page Ends Here */
 
