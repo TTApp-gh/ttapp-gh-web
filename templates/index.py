@@ -13,7 +13,7 @@
 
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
+<body id="body">
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
@@ -59,7 +59,6 @@
     </div>
 </nav>
 <br />
-<br />
 
 <!--------- The Index / Home Page is Identified and starts here id=drive -------------->
 <!--------- The Index / Home Page is Identified and starts here id=drive -------------->
@@ -75,6 +74,7 @@
 
 <!-- Ride/Package Section -->
 <section id="riding" class="section home ride ride-package-section" title="ride">
+<br />
 <br />
     <div class="container">
         <div class="row align-items-center">
@@ -2861,6 +2861,149 @@
 
 
 
+
+
+
+<!------------------- The freight Page Starts Here ---------------------->
+<!------------------- The freight Page Starts Here ---------------------->
+
+<!-- Supply Chain Section -->
+<section id="freight" class="section freight1 supply-chain-section" title="freight1">
+  <!-- Hero Section -->
+  <div class="hero-section position-relative">
+    <div class="overlay position-absolute w-100 h-100"></div>
+    <img src="{{ url_for('static', filename='images/freight0.PNG') }}" alt="Bridge with traffic" class="img-fluid w-100">
+    <div class="hero-content text-center text-white position-absolute top-50 start-50 translate-middle">
+      <h1 class="fw-bold">Future-proof your supply chain</h1>
+      <p class="mt-3">Harness the power of advanced technology and world-class logistics solutions to drive big results for your business.</p>
+      <div class="mt-4">
+        <a href="#" class="btn btn-light me-2">Ship with us</a>
+        <a href="#" class="btn btn-outline-light">Haul with us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Description Section -->
+  <div class="description-section text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold">{{ app_name }} delivers an end-to-end enterprise suite of Relational Logistics to advance supply-chains and move the world's goods.</h2>
+      <p class="mt-3 text-muted">
+        Our unique combination of expert-led partnerships, leveraging AI-assisted intel, and the largest capacity marketplace,
+        delivers next-generation logistics across the supply chain. At {{ app_name }}, we thrive in complexity, building new efficiencies at
+        every stage of the journey to help businesses run as intelligently as possible.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Boost Results and Join Our Network Section -->
+<section class="section freight1 boost-results py-5">
+  <div class="container">
+    <!-- Boost Results Section -->
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="mb-3">
+          <i class="bi bi-bar-chart-line" style="font-size: 2rem; color: #000;"></i>
+        </div>
+        <h5 class="fw-bold">Boost results with real-time intel</h5>
+        <p class="text-muted">
+          Our AI-optimized network is working for you 24/7, computing data across the shipper and carrier network to give you unparalleled visibility, allowing you to optimize your operations.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <div class="mb-3">
+          <i class="bi bi-gear" style="font-size: 2rem; color: #000;"></i>
+        </div>
+        <h5 class="fw-bold">Improve operational efficiency</h5>
+        <p class="text-muted">
+          Easily handle capacity issues and uncover budget and time savings with our dynamic capacity solutions. From spot to contract needs, LTL to AV modes, we've got you covered.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <div class="mb-3">
+          <i class="bi bi-person-check" style="font-size: 2rem; color: #000;"></i>
+        </div>
+        <h5 class="fw-bold">Let our experts lead the way</h5>
+        <p class="text-muted">
+          With more than 20 years of transportation management experience and deep vertical knowledge, our experts and processes ensure smooth operations for your business.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Join Our Network Section -->
+<section class="section freight1 join-network py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold">Join our network of $18B of freight under management</h2>
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="position-relative">
+          <img src="{{ url_for('static', filename='images/freight01.PNG') }}" alt="Shippers" class="img-fluid rounded">
+          <div class="overlay-content bg-dark text-white p-3 position-absolute bottom-0 start-0 w-100">
+            <h5 class="fw-bold">Shippers</h5>
+            <p>
+              Whether you're a small business or a large enterprise, we provide solutions tailored to your needs to drive improvements.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="position-relative">
+          <img src="{{ url_for('static', filename='images/freight02.PNG') }}" alt="Carriers" class="img-fluid rounded">
+          <div class="overlay-content bg-dark text-white p-3 position-absolute bottom-0 start-0 w-100">
+            <h5 class="fw-bold">Carriers</h5>
+            <p>
+              With upfront pricing, instant booking, and 24/7 support, {{ app_name }} keeps carriers in the driver's seat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Move a Load Today Section -->
+<section class="section freight1 hero-sectionf position-relative text-white text-center py-5" style="background: url('{{ url_for('static', filename='images/freight0.PNG') }}') no-repeat center center/cover; height: 60vh;">
+  <div class="overlay position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+  <div class="container position-relative z-1 d-flex flex-column align-items-center justify-content-center h-100">
+    <h1 class="display-4 fw-bold">Move a load today</h1>
+    <div class="mt-4">
+      <a href="#" class="btn btn-dark btn-lg me-2">Get instant quote</a>
+      <a href="#" class="btn btn-light btn-lg">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<!-- Advanced Logistics Technology Section -->
+<section class="section freight1 technology-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/freight03.PNG') }}" alt="Control Tower" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold">Advanced logistics technology at your fingertips</h2>
+        <p class="text-muted">
+          Optimize every move from planning to execution with a suite of technology solutions leveraging the volume and scale of the {{ app_name }} network, our domain expertise, and next-generation technologies.
+        </p>
+        <a href="#" class="btn btn-dark mt-3">Find out more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------------- The freight Page Ends Here ---------------------->
+<!------------------- The freight Page Ends Here ---------------------->
+
+
+
+
+
+
+
+
+
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
@@ -2886,7 +3029,7 @@
           <li><a href="#riding" id="ride" class="navigate">Ride</a></li>
           <li><a href="#driver" id="drive" class="navigate">Drive</a></li>
           <li><a href="#packaging" id="package1" class="navigate">Deliver</a></li>
-          <li><a href="#">{{ app_name }} Freight</a></li>
+          <li><a href="#freight" id="freight1" class="navigate">{{ app_name }} Freight</a></li>
           <li><a href="#">Gift cards</a></li>
         </ul>
       </div>

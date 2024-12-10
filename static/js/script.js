@@ -1,19 +1,26 @@
 // this is Javascript
 $(document).ready(function(){
+/* The Default Page And Position On Initial load */
 	$(".section").hide();
 	$(".home").show();
 	$(".navbar-toggler").on("click", function(){
 		$(".navbar-collapse").show();
 	});
 	
+	
+/* This Is Triggered On Click Of A Link Which takes Users to a particular Section Id */
 	$(".navigate").on("click", function(){
 		let classs = "."+$(this).attr('id');
 		$(".section").hide();
 		$(classs).show();
 		$(".navbar-collapse").slideUp();
+		//$('body').animate({scrollTop: '0px'}, 0);
+		$('body').scrollTop(0);
 		
 	});
 	
+	
+/* This Code is to Enable The Page Remain Even After Refresh */	
 	// Get the current page URL
 	const url = window.location.href;
 
@@ -28,6 +35,18 @@ $(document).ready(function(){
 	}
 });
 
+
+
+/* This code here refreshes the page on click of a backward or forward button */
+window.addEventListener('popstate', (event) => {
+    console.log('Back or forward button clicked!');
+    console.log('Refreshing the page...');
+    location.reload(); // Reload the page
+	$('body').scrollTop(0);
+});
+
+
+/* This Controls The Button / Element toggling of Frequent Aked Questions Found in Driver Page */
 document.querySelectorAll('.faq-question').forEach((button) => {
   button.addEventListener('click', () => {
     const faqItem = button.parentElement;
@@ -133,10 +152,3 @@ function initMap() {
 function handleLocationError(browserHasGeolocation, pos) {
 	alert(browserHasGeolocation ? "Error: The Geolocation service failed." : "Error: Your browser doesn't support geolocation.");
 }
-
-// This code here refreshes the page on click of a backward or forward button
-window.addEventListener('popstate', (event) => {
-    console.log('Back or forward button clicked!');
-    console.log('Refreshing the page...');
-    location.reload(); // Reload the page
-});

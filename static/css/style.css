@@ -1636,3 +1636,63 @@ a.text-decoration-none:hover {
 }
 /* Investors Page Ends Here */
 
+
+
+/* Frieght Page Starts Here */
+.supply-chain-section .hero-section {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.supply-chain-section .hero-section img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.supply-chain-section .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.supply-chain-section .hero-content {
+  z-index: 2;
+}
+
+.supply-chain-section .hero-content h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.supply-chain-section .description-section {
+  background-color: #f9f9f9;
+}
+
+.boost-results .bi {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.join-network .position-relative {
+  overflow: hidden;
+}
+
+.join-network .overlay-content {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-sectionf .overlay {
+  z-index: 0;
+}
+
+.hero-section .container {
+  z-index: 1;
+}
+
+.technology-section img {
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+}
+
+/* Frieght Page Ends Here */
+
